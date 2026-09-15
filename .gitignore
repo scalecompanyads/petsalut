@@ -1,0 +1,6 @@
+# Arquivos-fonte brutos (as versões usadas na página estão em assets/)
+/*.png
+/*.jpg
+/*.jpeg
+.DS_Store
+Thumbs.db

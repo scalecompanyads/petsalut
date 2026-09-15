@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Petsalut: Plano de saúde pet no Espírito Santo a partir de R$ 129,90/mês</title>
+<meta name="description" content="Mensalidade fixa, sem coparticipação e rede credenciada no Espírito Santo. Consulta, exame, internação e cirurgia conforme o plano. Contrate online em poucos minutos.">
+<meta property="og:title" content="Petsalut: Plano de saúde pet no Espírito Santo">
+<meta property="og:description" content="Troque a conta surpresa do veterinário por uma mensalidade fixa que cabe no mês. A partir de R$ 129,90.">
+<meta property="og:image" content="assets/hero-bg.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo.png">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2MNND4K');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+  :root{
+    --teal:#009D96;
+    --teal-dark:#007A74;
+    --teal-deep:#0B5F5A;
+    --mint:#D8F0EE;        /* fundo hero / seções */
+    --mint-2:#C9EAE7;      /* card grande arredondado */
+    --mint-3:#EEF8F7;
+    --wine:#A51437;
+    --wine-dark:#84102C;
+    --pink:#FBE8EC;        /* seção rosa */
+    --pink-2:#FDF3F5;
+    --ink:#1B2B2F;
+    --ink-2:#4D5F63;
+    --ink-3:#7E8E92;
+    --white:#FFFFFF;
+    --line:#E3EBEA;
+    --r-lg:32px;
+    --r-md:20px;
+    --shadow:0 12px 32px rgba(27,43,47,.08);
+    --max:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:#fff;font-size:16px;line-height:1.65;overflow-x:hidden}
+  img{max-width:100%;height:auto;display:block}
+  a{color:inherit}
+  h1,h2,h3{line-height:1.15;font-weight:800;letter-spacing:-.02em}
+  h1{font-size:clamp(26px,3.4vw,38px)}
+  h2{font-size:clamp(26px,3.4vw,38px)}
+  h3{font-size:clamp(18px,2vw,21px)}
+  p{color:var(--ink-2)}
+  .hl-teal{color:var(--teal)}
+  .hl-wine{color:var(--wine)}
+  .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+  .hero .container>*,.two-col>*,.photo-band>*,.plans-grid>*,.steps>*,.problem-grid>*,.why-grid>*,footer .container>*,.about>*{min-width:0}
+  section{padding:72px 0;position:relative}
+  @media(min-width:900px){section{padding:96px 0}}
+  .lead{font-size:clamp(16px,1.4vw,18px);color:var(--ink-2)}
+  .center{text-align:center}
+  .section-head{max-width:720px;margin:0 auto 40px}
+  .section-head h2{margin:14px 0 12px}
+
+  /* Eyebrow em pill, como na referência */
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 10px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+  .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--wine)}
+  .eyebrow.teal::before{background:var(--teal)}
+
+  /* Padrão de pontos decorativo */
+  .dots{position:absolute;width:140px;height:140px;background-image:radial-gradient(var(--teal) 1.6px,transparent 1.7px);background-size:14px 14px;opacity:.35;pointer-events:none}
+  .dots.wine{background-image:radial-gradient(var(--wine) 1.6px,transparent 1.7px)}
+  @media(max-width:899px){.dots{display:none}}
+
+  /* Botões */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;white-space:nowrap;font-family:inherit}
+  .btn-wine{background:var(--wine);color:#fff;box-shadow:0 8px 22px rgba(165,20,55,.25)}
+  .btn-wine:hover{background:var(--wine-dark);transform:translateY(-1px)}
+  .btn-teal{background:var(--teal);color:#fff;box-shadow:0 8px 22px rgba(0,157,150,.25)}
+  .btn-teal:hover{background:var(--teal-dark);transform:translateY(-1px)}
+  .btn-white{background:#fff;color:var(--wine)}
+  .btn-white:hover{background:#FFF3F6}
+  .btn-outline{background:transparent;color:var(--teal-dark);border-color:var(--teal)}
+  .btn-outline:hover{background:var(--mint-3)}
+  .btn-block{width:100%}
+  .btn i{font-size:15px}
+  .btn-ic{padding:8px 8px 8px 28px;gap:14px}
+  .btn-ic .ic{width:40px;height:40px;border-radius:50%;background:#fff;color:var(--wine);display:grid;place-items:center;transition:transform .25s ease,background .25s ease;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+  .btn-ic .ic i{font-size:14px;transform:rotate(-45deg)}
+  .btn-ic:hover .ic{transform:translate(3px,-3px)}
+
+  /* 1. Hero: imagem de fundo full-bleed, cantos inferiores arredondados, altura menor que a tela */
+  .hero{background:#CFE5D3 url("assets/hero-bg.jpg") center right/cover no-repeat;padding:36px 0 84px;overflow:hidden;border-radius:0 0 28px 28px;min-height:0;position:relative;z-index:3}
+  @media(min-width:900px){.hero{padding:48px 0 96px;min-height:0;max-height:none;display:flex;align-items:center;border-radius:0 0 56px 56px}}
+  .hero .container{display:grid;gap:28px;align-items:center;width:100%}
+  @media(min-width:900px){.hero .container{grid-template-columns:minmax(0,600px) 1fr;gap:40px}}
+  .hero-logo{height:32px;width:auto;margin-bottom:18px}
+  .hero h1{margin:0 0 18px;color:var(--ink)}
+  .hero h1 span{color:var(--wine)}
+  .hero .lead{margin-bottom:20px;max-width:520px;color:var(--ink);font-weight:500}
+  .hero .lead strong{color:var(--ink)}
+  .price-line{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:26px}
+  .price-line b{color:var(--wine);font-size:26px;font-weight:800}
+  .hero-actions{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+  .proof{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;font-size:14px;font-weight:700;color:var(--teal-deep)}
+  .proof li{display:flex;align-items:center;gap:6px}
+  .proof li::before{content:"";width:18px;height:18px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat;flex:none}
+  /* Área dos pets: no desktop é só o espaço sobre a imagem de fundo (pra posicionar os badges); no mobile vira uma imagem recortada */
+  .hero-pets{position:relative;min-height:0}
+  @media(min-width:900px){.hero-pets{align-self:stretch;min-height:380px}.hero-mobile-img{display:none}}
+  @media(max-width:899px){
+    .hero{background-image:none;background:#B0DDD4;padding-top:0;padding-bottom:68px;min-height:0;max-height:none}
+    .hero .container{gap:8px;padding:0}
+    .hero-pets{order:-1;width:min(58vw,230px);margin:0 auto;margin-top:-14px}
+    .hero-mobile-img{width:100%;aspect-ratio:1/1;object-fit:contain;object-position:center;background:#B0DDD4;border-radius:0}
+    .hero-copy{text-align:center;display:flex;flex-direction:column;align-items:center;padding:0 20px}
+    .hero-logo{margin:0 auto 14px}
+    .hero .lead{max-width:none}
+    .hero-actions{align-items:center;width:100%}
+    .hero .price-line{display:none}
+    .hero .lead{font-size:14px;margin-bottom:12px;line-height:1.45}
+    .hero h1{font-size:22px;margin-bottom:10px}
+    .hero-logo{height:26px;margin-bottom:8px}
+    .hero .container{gap:0}
+  }
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  .tag-pill{animation:floaty 4.5s ease-in-out infinite;will-change:transform}
+  .tag-pill.tp2{animation-duration:5.5s;animation-delay:-2.2s}
+  @media(prefers-reduced-motion:reduce){.tag-pill{animation:none}}
+  .tag-pill{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 22px 10px 12px;border-radius:999px;color:#fff;font-size:15px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(4px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+  .tag-pill i{width:30px;height:30px;border-radius:50%;background:#fff;display:grid;place-items:center;font-style:normal}
+  .tag-pill i span{font-size:13px}
+  .tag-pill.teal{background:rgba(0,157,150,.55)} .tag-pill.teal i{color:var(--teal)}
+  .tag-pill.wine{background:rgba(165,20,55,.5)} .tag-pill.wine i{color:var(--wine)}
+  .tag-pill.tp1{top:8%;right:4%} .tag-pill.tp2{top:70%;left:0}
+  @media(max-width:899px){.tag-pill{font-size:11px;padding:5px 12px 5px 6px;gap:6px} .tag-pill i{width:20px;height:20px} .tag-pill i span{font-size:10px} .hero-pets .tag-pill.tp1{top:26%;right:-30%} .hero-pets .tag-pill.tp2{top:68%;left:-24%}}
+
+  /* Card de confiança sobreposto à base do hero */
+  .trust-wrap{position:relative;margin-top:-52px;background:#fff;padding-top:0}
+  .trust{position:relative;z-index:4;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 44px rgba(27,43,47,.10);padding:22px;display:grid;gap:18px}
+  @media(min-width:640px){.trust{grid-template-columns:1fr 1fr}}
+  @media(min-width:1000px){.trust{grid-template-columns:repeat(4,1fr);padding:26px 28px;gap:22px}}
+  .trust-item{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+  .trust-item .ico{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center}
+  .trust-item .ico i{font-size:20px}
+  .trust-item .ico.t{background:var(--mint);color:var(--teal)}
+  .trust-item .ico.w{background:var(--pink);color:var(--wine)}
+  .trust-item h3{font-size:16px;margin-bottom:4px}
+  .trust-item p{font-size:13px;line-height:1.45;color:var(--ink-2)}
+
+  /* 2. Problema (rosa, como a faixa de parceiros da referência) */
+  .problem{background:#fff;padding-top:48px}
+  .problem h2{max-width:760px;margin:14px auto 0}
+  .problem-grid{display:grid;gap:20px;margin:48px 0 36px}
+  @media(min-width:800px){.problem-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
+  .problem-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:32px 28px 30px;box-shadow:0 18px 44px rgba(27,43,47,.08);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;isolation:isolate}
+  .problem-card::after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(165,20,55,.09),transparent 70%);z-index:-1}
+  .problem-card:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(11,95,90,.18)}
+  .problem-card .ico{width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,var(--wine),#D24A6E);display:grid;place-items:center;margin-bottom:22px;color:#fff;box-shadow:0 10px 24px rgba(165,20,55,.3)}
+  .problem-card .ico i{font-size:22px}
+  .problem-card h3{margin-bottom:10px;font-size:19px;line-height:1.25}
+  .problem-card p{font-size:15px;line-height:1.6}
+  .callout{background:var(--wine);color:#fff;padding:22px 28px;border-radius:var(--r-md);font-size:17px;font-weight:700;max-width:820px;margin:0 auto;text-align:center;line-height:1.5}
+
+  /* 3. Como funciona */
+  .how{padding:16px 12px 0;background:#fff;position:relative;z-index:2}
+  @media(min-width:900px){.how{padding:24px 20px 0}}
+  .how-card{background:#FDF9F7;border-radius:36px;padding:40px 0;box-shadow:0 24px 60px rgba(27,43,47,.12)}
+  @media(min-width:900px){.how-card{border-radius:56px;padding:48px 0}}
+  .how .big-card{background:#fff}
+  .how .step{border:0}
+  .how-grid{display:grid;gap:36px;align-items:center}
+  @media(min-width:900px){.how-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}.how-img{order:-1;justify-content:flex-start;margin-left:-100px}}
+  .how-grid>*{min-width:0}
+  .how-text h2{margin:14px 0 14px}
+  .how-text .lead{margin-bottom:28px;color:var(--ink);font-weight:500}
+  .how-text .hl-teal{color:var(--teal)}
+  .how .steps{display:grid;grid-template-columns:1fr;gap:22px;margin:0}
+  .how .step{display:flex;gap:16px;align-items:flex-start;padding:0;border-radius:0;background:transparent;box-shadow:none}
+  .how .step .num{flex:none;margin:0;width:40px;height:40px;font-size:16px}
+  .how .step h3{margin-bottom:4px;font-size:17px}
+  .how .step p{font-size:15px;color:var(--ink);font-weight:500}
+  .how-img{display:flex;justify-content:center;position:relative}
+  .tag-pill.tp3{top:4%;right:2%}
+  .tag-pill.tp4{top:5%;left:8%;animation-duration:5.2s;animation-delay:-1.4s}
+  @media(max-width:899px){.tag-pill.tp3{top:6%;right:2%} .tag-pill.tp4{top:66%;left:2%}}
+  .how-img img{width:100%;max-width:680px;-webkit-mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 60%,transparent 100%);mask-image:radial-gradient(ellipse 72% 72% at 50% 50%,#000 60%,transparent 100%)}
+  .steps{display:grid;gap:18px;margin:44px 0}
+  @media(min-width:800px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:30px 26px;box-shadow:var(--shadow)}
+  .step .num{width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;font-weight:800;display:grid;place-items:center;font-size:17px;margin-bottom:16px}
+  .step h3{margin-bottom:8px}
+  .step p{font-size:15px}
+  .big-card{background:var(--mint-2);border-radius:var(--r-lg);padding:44px 28px;position:relative;overflow:hidden}
+  @media(min-width:900px){.big-card{padding:60px 64px}}
+  .objection{max-width:760px;margin:0 auto;text-align:center}
+  .objection .quote{font-weight:800;color:var(--wine);font-size:clamp(22px,2.6vw,30px);letter-spacing:-.02em;margin:14px 0 14px}
+  .objection p{font-size:17px;color:var(--ink-2)}
+  .objection p strong{color:var(--ink);display:block;margin-top:12px;font-size:18px}
+
+  /* 4. Planos */
+  .plans{background:#fff;scroll-margin-top:16px}
+  .plans-grid{display:grid;gap:22px;align-items:stretch}
+  @media(min-width:960px){.plans-grid{grid-template-columns:repeat(3,1fr)}}
+  .plan{position:relative;border:2px solid var(--mint-2);border-radius:28px;padding:32px 26px 26px;background:#fff;display:flex;flex-direction:column;transition:box-shadow .2s}
+  .plan:hover{box-shadow:var(--shadow)}
+  .plan .pic{width:52px;height:52px;border-radius:16px;background:var(--mint);display:grid;place-items:center;color:var(--teal);margin-bottom:16px}
+  .plan .pic i{font-size:22px}
+  .plan .name{font-size:22px;font-weight:800;color:var(--ink);letter-spacing:-.01em}
+  .plan .tag{font-size:14px;color:var(--ink-3);font-weight:600;margin-bottom:18px}
+  .plan .price{display:flex;align-items:baseline;gap:5px;margin-bottom:6px}
+  .plan .price .cur{font-size:16px;font-weight:700;color:var(--ink-2)}
+  .plan .price .val{font-size:46px;font-weight:800;letter-spacing:-.03em;color:var(--ink);line-height:1}
+  .plan .price .cents{font-size:20px;font-weight:800;color:var(--ink)}
+  .plan .per{font-size:13px;color:var(--ink-3);font-weight:600;margin-bottom:22px}
+  .plan hr{border:0;border-top:1px solid var(--line);margin:0 0 20px}
+  .plan .incl{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:12px}
+  .plan .incl i{font-size:15px}
+  .plan.featured .incl{color:#fff}
+  .plan ul{list-style:none;display:grid;gap:11px;font-size:14px;margin-bottom:22px}
+  .plan li{display:flex;gap:10px;align-items:flex-start;color:var(--ink-2);line-height:1.45}
+  .plan li b{color:var(--ink);font-weight:800}
+  .plan li .ok,.plan li .no{flex:none;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;margin-top:1px}
+  .plan li .ok{background:var(--teal);color:#fff}
+  .plan li .no{background:#EEF2F2;color:#B4C0C2}
+  .plan li .ok i,.plan li .no i{font-size:10px}
+  .plan li.no-item{color:var(--ink-3)}
+  .plan .more{display:none}
+  .plan.open .more{display:flex}
+  .plan .toggle{margin:-8px 0 18px;background:none;border:0;color:var(--teal-dark);font-weight:800;font-size:14px;cursor:pointer;font-family:inherit;text-align:left;padding:0}
+  .plan.open .toggle .t-close,.plan:not(.open) .toggle .t-open{display:none}
+  .plan .btn{margin-top:auto}
+  .plan ul{flex:1}
+  /* Card em destaque: sólido vinho, como a referência */
+  .plan.featured{background:var(--wine);border-color:var(--wine);color:#fff;box-shadow:0 22px 50px rgba(165,20,55,.28)}
+  @keyframes badgePulse{0%,100%{box-shadow:0 8px 20px rgba(0,157,150,.35),0 0 0 0 rgba(0,157,150,.55)}70%{box-shadow:0 8px 20px rgba(0,157,150,.35),0 0 0 14px rgba(0,157,150,0)}}
+  @keyframes badgeShine{0%{transform:translateX(-140%) skewX(-20deg)}60%,100%{transform:translateX(240%) skewX(-20deg)}}
+  @keyframes badgeBob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-4px)}}
+  .plan.featured .badge{position:absolute;top:-19px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--teal),#1FB8AE);color:#fff;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px 10px 16px;border-radius:999px;white-space:nowrap;display:flex;align-items:center;gap:8px;overflow:hidden;border:2px solid #fff;animation:badgePulse 2.4s ease-out infinite,badgeBob 3s ease-in-out infinite}
+  .plan.featured .badge i{font-size:13px;color:#FFE27A}
+  .plan.featured .badge::after{content:"";position:absolute;top:0;bottom:0;left:0;width:40%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:badgeShine 3s ease-in-out infinite}
+  @media(prefers-reduced-motion:reduce){.plan.featured .badge,.plan.featured .badge::after{animation:none}}
+  .plan.featured .pic{background:rgba(255,255,255,.15);color:#fff}
+  .plan.featured .name,.plan.featured .price .val,.plan.featured .price .cents,.plan.featured li b{color:#fff}
+  .plan.featured .tag,.plan.featured .price .cur,.plan.featured .per,.plan.featured li{color:rgba(255,255,255,.82)}
+  .plan.featured hr{border-color:rgba(255,255,255,.2)}
+  .plan.featured li .ok{background:#fff;color:var(--wine)}
+  .plan.featured li .no{background:rgba(255,255,255,.15);color:rgba(255,255,255,.5)}
+  .plan.featured li.no-item{color:rgba(255,255,255,.6)}
+  .plan.featured .toggle{color:#fff}
+  .plans-foot{margin-top:36px}
+  .plans-foot .line{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 36px;background:var(--mint-3);border:1px solid var(--mint-2);border-radius:20px;padding:18px 32px;margin-bottom:24px}
+  .plans-foot .line span{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:var(--ink);white-space:nowrap}
+  .plans-foot .line span i{flex:none;width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:11px}
+  .plans-foot .line a{color:var(--teal-dark);font-weight:800}
+  .plans-foot .help{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 18px;font-size:16px;font-weight:700;color:var(--ink);text-align:center}
+  .plans-foot .help .btn{padding:13px 24px;font-size:15px}
+  .btn-wa-solid{background:#25D366;color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.28)}
+  .btn-wa-solid:hover{background:#1EBE5B;transform:translateY(-1px)}
+  .btn-wa-solid i{font-size:18px}
+
+  /* 5. Rede: card full-width com o mapa de fundo, texto à direita */
+  .net{padding:16px 20px 0;background:#fff;position:relative;z-index:2}
+  @media(min-width:900px){.net{padding:24px 20px 0}}
+  .net-card{position:relative;overflow:hidden;background:#C9E0DA;border-radius:36px;padding:48px 0;max-width:var(--max);margin:0 auto;box-shadow:0 24px 60px rgba(27,43,47,.12);scroll-margin-top:16px;min-height:420px;display:flex;align-items:center}
+  @media(min-width:900px){.net-card{border-radius:40px;padding:56px 0;min-height:600px}}
+  /* imagem inteira, sem corte; overlay cobre a emenda com a cor do card */
+  .net-card::before{content:"";position:absolute;inset:0;background:url("assets/rede-mapa.jpg") 6% center/auto 100% no-repeat}
+  .net-card::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#C9E0DA 4%,rgba(201,224,218,0) 16%,rgba(201,224,218,0) 50%,rgba(201,224,218,.85) 68%,#C9E0DA 82%),linear-gradient(180deg,#C9E0DA 0%,rgba(201,224,218,0) 14%,rgba(201,224,218,0) 84%,#C9E0DA 100%)}
+  .net-card>.container{position:relative;z-index:1}
+  .net-card .container{width:100%}
+  .net-copy{max-width:480px;text-align:left}
+  @media(min-width:900px){.net-copy{margin-left:auto;margin-right:24px}}
+  .net-copy h2{margin:14px 0 14px}
+  .net-copy .lead{color:var(--ink);font-weight:500;margin-bottom:22px}
+  @media(max-width:899px){
+    .net-card{min-height:0;padding:0 0 40px;align-items:flex-start}
+    .net-card::before{inset:auto;top:0;left:0;right:0;height:360px;background:url("assets/rede-mapa.jpg") left top/auto 100% no-repeat}
+    .net-card::after{inset:auto;top:0;left:0;right:0;height:360px;background:linear-gradient(180deg,rgba(201,224,218,0) 55%,#C9E0DA 100%),linear-gradient(90deg,rgba(201,224,218,0) 60%,#C9E0DA 100%)}
+    .net-copy{padding:340px 0 0;max-width:none}
+  }
+  /* 5b. Carências: linha do tempo */
+  .car-sec{background:#fff}
+  .timeline{position:relative;display:grid;gap:22px 14px}
+  .timeline::before{content:"";position:absolute;background:linear-gradient(90deg,var(--teal),#7FC9C4 55%,var(--wine));border-radius:4px;opacity:.55}
+  .tl-item{position:relative;display:flex;gap:16px;align-items:flex-start}
+  .tl-node{flex:none;width:68px;height:68px;border-radius:50%;background:#fff;border:3px solid var(--teal);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;box-shadow:0 10px 24px rgba(0,157,150,.18);position:relative;z-index:1}
+  .tl-node b{font-size:22px;font-weight:800;letter-spacing:-.03em;color:var(--wine)}
+  .tl-node small{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-top:3px}
+  .tl-node.zero{border-color:var(--wine);background:var(--wine);box-shadow:0 10px 24px rgba(165,20,55,.25)}
+  .tl-node.zero i{font-size:20px;color:#fff}
+  .tl-node.zero small{color:rgba(255,255,255,.85)}
+  .tl-card{flex:1;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 18px 20px;box-shadow:0 10px 28px rgba(27,43,47,.06);transition:transform .25s,box-shadow .25s}
+  .tl-item:hover .tl-card{transform:translateY(-4px);box-shadow:0 18px 40px rgba(11,95,90,.12)}
+  .tl-card h4{font-size:14px;font-weight:800;margin-bottom:10px;color:var(--wine);line-height:1.25;text-transform:uppercase;letter-spacing:.04em}
+  .tl-card ul{list-style:none;display:grid;gap:6px;text-align:left}
+  .tl-card li{display:flex;gap:7px;align-items:flex-start;font-size:13px;line-height:1.4;color:var(--ink-2)}
+  .tl-card li::before{content:"";flex:none;width:14px;height:14px;margin-top:2px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23007A74' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/8px no-repeat}
+  /* mobile: linha vertical à esquerda */
+  @media(max-width:899px){
+    .timeline{padding-left:0}
+    .timeline::before{left:32px;top:34px;bottom:34px;width:4px;background:linear-gradient(180deg,var(--teal),#7FC9C4 55%,var(--wine))}
+  }
+  /* desktop: linha horizontal, nós em cima, cards embaixo */
+  @media(min-width:900px){
+    .timeline{grid-template-columns:repeat(6,1fr);gap:0 14px;padding-top:6px}
+    .timeline::before{left:8%;right:8%;top:40px;height:4px}
+    .tl-item{flex-direction:column;align-items:center;gap:18px}
+    .tl-card{width:100%;text-align:left;padding:18px 16px 20px}
+  }
+
+  /* 6. Sobre + diferenciais + indicação */
+  .about{display:grid;gap:32px;align-items:center;margin-bottom:64px}
+  @media(min-width:900px){.why{padding-top:96px!important}}
+  @media(min-width:900px){.about{grid-template-columns:1fr 1fr;gap:56px}}
+  .about h2{margin:14px 0 14px}
+  .about .stat{display:inline-flex;flex-direction:column;background:var(--pink);border-radius:var(--r-md);padding:16px 22px;margin-top:22px}
+  .about .stat b{font-size:30px;font-weight:800;color:var(--wine);line-height:1.1;letter-spacing:-.02em}
+  .about .stat span{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+  .blob-photo{position:relative;padding:24px}
+  .blob-photo::before{content:"";position:absolute;inset:0;background:var(--teal);border-radius:58% 42% 45% 55% / 50% 60% 40% 50%;opacity:.85}
+  .blob-photo::after{content:"";position:absolute;right:0;bottom:0;width:46%;height:46%;background:var(--wine);border-radius:50% 50% 40% 60% / 60% 40% 60% 40%;opacity:.9}
+  .blob-photo img{position:relative;z-index:1;border-radius:26px;aspect-ratio:4/3;object-fit:cover;width:100%}
+  .why-grid{display:grid;gap:18px;margin:44px 0 64px}
+  @media(min-width:800px){.why-grid{grid-template-columns:repeat(3,1fr)}}
+  .why-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:26px;box-shadow:var(--shadow)}
+  .why-card .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:16px}
+  .why-card .ico i{font-size:20px}
+  .why-card .ico.t{background:var(--mint);color:var(--teal)}
+  .why-card .ico.w{background:var(--pink);color:var(--wine)}
+  .why-card h3{margin-bottom:6px}
+  .why-card p{font-size:15px}
+  .ref-sec{padding:16px 12px 0;background:#fff;position:relative;z-index:2}
+  @media(min-width:900px){.ref-sec{padding:24px 20px 0}}
+  .referral{background:#fff;border-radius:36px;padding:40px 0;box-shadow:0 24px 60px rgba(27,43,47,.12);position:relative;overflow:hidden}
+  @media(min-width:900px){.referral{border-radius:56px;padding:48px 0}}
+  .ref-inner{display:grid;gap:28px;align-items:center}
+  @media(min-width:900px){.ref-inner{grid-template-columns:1.1fr .9fr;gap:24px}}
+  .ref-inner>*{min-width:0}
+  .ref-text .btn{margin-top:24px}
+  .ref-img{display:flex;justify-content:center;position:relative}
+  @keyframes imgFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .ref-img img{animation:imgFloat 6s ease-in-out infinite}
+  .tag-pill.tp5{top:14%;left:0;text-transform:none;letter-spacing:0;font-size:14px}
+  .tag-pill.tp6{top:80%;right:-2%;text-transform:none;letter-spacing:0;font-size:14px;animation-duration:5.2s;animation-delay:-1.8s}
+  @keyframes sparkle{0%,100%{transform:scale(.6) rotate(0);opacity:.35}50%{transform:scale(1.15) rotate(15deg);opacity:1}}
+  .ref-spark{position:absolute;color:var(--wine);font-size:18px;animation:sparkle 3s ease-in-out infinite;pointer-events:none}
+  .ref-spark.s1{top:6%;right:18%;color:var(--wine)}
+  .ref-spark.s2{top:38%;left:8%;color:#F2B01E;animation-delay:-1s;font-size:16px}
+  .ref-spark.s3{bottom:12%;right:4%;color:var(--teal);animation-delay:-2s;font-size:20px}
+  @media(max-width:899px){.tag-pill.tp5{left:0;top:10%}.tag-pill.tp6{right:0;top:64%}}
+  @media(prefers-reduced-motion:reduce){.ref-img img,.ref-spark{animation:none}}
+  @media(max-width:899px){.ref-img{order:-1;margin-top:-12px}.ref-img img{max-width:300px}.ref-text{text-align:center;display:flex;flex-direction:column;align-items:center}.ref-grid{max-width:none;width:100%}}
+  .ref-img img{width:100%;max-width:440px}
+  @media(min-width:900px){.ref-img{justify-content:flex-end}.ref-img img{max-width:520px;margin-right:-60px}}
+  .referral h3{font-size:clamp(24px,3vw,32px);margin:14px 0 12px;letter-spacing:-.02em}
+  .referral p{max-width:520px;font-size:16px}
+  .referral p b{color:var(--wine)}
+  .ref-grid{display:grid;gap:14px;margin-top:22px;max-width:460px}
+  @media(min-width:520px){.ref-grid{grid-template-columns:1fr 1fr}}
+  .ref-box{border-radius:var(--r-md);padding:22px;text-align:center}
+  .ref-box.t{background:var(--mint)} .ref-box.w{background:var(--pink)}
+  .ref-box small{display:block;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
+  .ref-box strong{font-size:40px;font-weight:800;line-height:1;letter-spacing:-.03em}
+  .ref-box.t strong{color:var(--teal-dark)} .ref-box.w strong{color:var(--wine)}
+
+  /* Depoimentos (oculto até CONFIG.depoimentos) */
+  .testi{background:var(--mint-3)}
+  .testi-grid{display:grid;gap:18px}
+  @media(min-width:800px){.testi-grid{grid-template-columns:repeat(3,1fr)}}
+  .testi-card{background:#fff;border-radius:var(--r-md);padding:26px;box-shadow:var(--shadow)}
+  .testi-card p{font-size:15px;margin-bottom:14px}
+  .testi-card b{display:block;font-size:14px;color:var(--ink)}
+  .testi-card small{color:var(--ink-3);font-size:13px}
+
+  /* 7. FAQ */
+  .faq{background:#fff}
+  .faq-list{max-width:800px;margin:0 auto}
+  details{position:relative;border:1px solid var(--line);border-radius:22px;padding:6px 22px;margin-bottom:14px;background:#fff;box-shadow:0 6px 18px rgba(27,43,47,.04);transition:box-shadow .25s ease,border-color .25s ease,transform .25s ease;overflow:hidden}
+  details:hover{border-color:var(--mint-2);box-shadow:0 14px 32px rgba(11,95,90,.10);transform:translateY(-2px)}
+  details[open]{border-color:var(--mint-2);box-shadow:0 18px 40px rgba(11,95,90,.12)}
+  summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:18px 0;font-weight:800;font-size:16px;color:var(--ink);line-height:1.35}
+  summary::-webkit-details-marker{display:none}
+  summary .q{flex:none;width:38px;height:38px;border-radius:12px;background:var(--mint);color:var(--teal-dark);display:grid;place-items:center;font-size:15px;transition:background .25s,color .25s}
+  summary .txt{flex:1}
+  summary .pm{flex:none;width:32px;height:32px;border-radius:50%;background:var(--mint-3);border:1px solid var(--mint-2);color:var(--teal-dark);display:flex;align-items:center;justify-content:center;transition:transform .25s,background .25s,color .25s}
+  summary .pm i{font-size:13px;line-height:1;display:block}
+  details[open] summary .q{background:var(--teal);color:#fff}
+  details[open] summary .pm{transform:rotate(45deg);background:var(--teal);border-color:var(--teal);color:#fff}
+  details p{padding:0 0 20px 54px;font-size:15px;line-height:1.65}
+  @media(max-width:600px){details p{padding-left:0}}
+  .faq-cta{text-align:center;margin-top:36px}
+  .faq-cta p{margin-bottom:14px;font-weight:700;color:var(--ink)}
+  .btn-wa{border-color:#25D366;color:#128C7E}
+  .btn-wa:hover{background:#EAFBF1}
+
+  /* 8. CTA final + rodapé */
+  .final{background:var(--mint);text-align:center;overflow:hidden;padding-bottom:calc(72px + 56px)}
+  .final h2{max-width:800px;margin:14px auto 14px}
+  .final p{max-width:600px;margin:0 auto 28px;font-size:17px}
+  footer{background:var(--wine);color:rgba(255,255,255,.8);padding:64px 0 28px;font-size:14px;border-radius:40px 40px 0 0;margin-top:-40px;position:relative}
+  @media(min-width:900px){footer{border-radius:56px 56px 0 0;padding-top:80px;margin-top:-56px}}
+  footer .top{display:grid;gap:36px;margin-bottom:40px}
+  @media(min-width:900px){footer .top{grid-template-columns:1.2fr 1fr 1fr}}
+  footer img{height:30px;filter:brightness(0) invert(1);margin-bottom:16px}
+  footer h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+  footer nav{display:grid;gap:8px}
+  footer nav a{color:rgba(255,255,255,.85);font-weight:600;text-decoration:none}
+  footer nav a:hover{color:#fff}
+  .contacts{display:grid;gap:14px}
+  .contact{padding:0}
+  .contact small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-bottom:4px}
+  .contact b{color:#fff;font-size:16px}
+  .contact span{display:block;font-size:12px;color:rgba(255,255,255,.65);margin-top:2px}
+  footer .legal{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;margin-top:32px;font-size:12px;color:rgba(255,255,255,.6);display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+
+  /* Pendência: oculto até o CONFIG ser preenchido */
+  [data-needs]:not(.ready){display:none!important}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2MNND4K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ===================== 1. HERO ===================== -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-copy">
+      <img class="hero-logo" src="assets/logo.png" alt="Petsalut" width="591" height="96">
+      <h1>Ninguém se planeja pra correr com o pet pro veterinário numa sexta à noite. <span>Mas dá pra se planejar pra ter atendimento quando precisar.</span></h1>
+      <p class="lead">Com o plano de saúde pet da Petsalut, você paga uma mensalidade fixa e usa a rede credenciada no Espírito Santo para consulta, exame, internação e cirurgia, conforme o plano, <strong>sem pagar nada a mais por atendimento.</strong></p>
+      <p class="price-line">A partir de <b>R$ 129,90</b>/mês. Contratação 100% online.</p>
+      <div class="hero-actions">
+        <a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="1">Quero parar de me preocupar! <span class="ic"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-pets" aria-hidden="true">
+      <img class="hero-mobile-img" src="assets/hero-pets-2.png" alt="" width="447" height="359" fetchpriority="high">
+      <div class="tag-pill teal tp1"><i><span class="fa-solid fa-heart"></span></i>Felicidade</div>
+      <div class="tag-pill wine tp2"><i><span class="fa-solid fa-heart"></span></i>Cuidado</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CARD DE CONFIANÇA (entre hero e problema) ===================== -->
+<div class="trust-wrap">
+  <div class="container">
+    <div class="trust">
+      <div class="trust-item">
+        <div class="ico t"><i class="fa-solid fa-shield-heart"></i></div>
+        <div><h3>Sem coparticipação</h3><p>O valor pago é a mensalidade. Nada a mais por consulta, exame ou internação.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="ico w"><i class="fa-solid fa-location-dot"></i></div>
+        <div><h3>Rede credenciada no ES</h3><p>Clínicas e hospitais em Vitória, Vila Velha, Guarapari e outras cidades capixabas.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="ico t"><i class="fa-solid fa-calendar-check"></i></div>
+        <div><h3>9 anos de mercado</h3><p>Desde 2017 cuidando de cães e gatos no Espírito Santo.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="ico w"><i class="fa-solid fa-heart"></i></div>
+        <div><h3>Felicidade</h3><p>Seu pet atendido quando precisar, sem susto no orçamento da família.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== 2. PROBLEMA ===================== -->
+<section class="problem">
+  <span class="dots wine" style="right:-40px;top:30px"></span>
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow">O problema</span>
+      <h2>A conta do veterinário não avisa quando vai chegar. <span class="hl-wine">Mas sempre chega inteira.</span></h2>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="ico"><i class="fa-regular fa-clock"></i></div>
+        <h3>Você adia a consulta pra economizar.</h3>
+        <p>Aí o problema que era simples de tratar no começo vira emergência, que é justamente o atendimento mais caro.</p>
+      </div>
+      <div class="problem-card">
+        <div class="ico"><i class="fa-solid fa-credit-card"></i></div>
+        <h3>A emergência chega e a conta vai pro cartão.</h3>
+        <p>Consulta, exame, internação, cirurgia: tudo de uma vez, parcelado, comendo o orçamento da família por meses.</p>
+      </div>
+      <div class="problem-card">
+        <div class="ico"><i class="fa-solid fa-scale-unbalanced"></i></div>
+        <h3>E a decisão passa a ser pelo preço.</h3>
+        <p>Escolher a clínica mais barata em vez da melhor. Tratar aos poucos, conforme dá. No pior cenário, o tratamento do seu pet é decidido pelo bolso, não pelo veterinário.</p>
+      </div>
+    </div>
+    <div class="callout">Quem tem mais de um pet multiplica esse risco. Cada um é uma emergência em potencial sem dinheiro reservado pra ela.</div>
+    <div class="center" style="margin-top:32px"><a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="2">Quero parar de me preocupar! <span class="ic"><i class="fa-solid fa-arrow-right"></i></span></a></div>
+  </div>
+</section>
+
+<!-- ===================== 3. COMO FUNCIONA ===================== -->
+<section class="how">
+  <div class="how-card">
+  <div class="container">
+    <div class="how-grid">
+      <div class="how-text">
+        <span class="eyebrow teal">Como funciona</span>
+        <h2>O plano transforma um gasto imprevisível em um <span class="hl-teal">valor fixo que cabe no mês.</span></h2>
+        <p class="lead">Hoje você paga o veterinário "por evento": quando o pet adoece, a conta chega de uma vez. Com a Petsalut, esse custo é diluído numa mensalidade fixa. Você leva o pet na clínica credenciada e o atendimento está coberto conforme o seu plano, sem desembolsar nada a mais.</p>
+        <div class="steps">
+      <div class="step"><div class="num">1</div><div><h3>Escolha o plano</h3><p>Três opções, cobertura clara, a partir de R$ 129,90/mês. Você contrata online agora mesmo.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h3>Use a rede credenciada</h3><p>Clínicas e hospitais veterinários no Espírito Santo. Consulta, exame, internação e cirurgia, conforme o plano.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h3>Não pague nada a mais</h3><p>Sem coparticipação. O valor pago é a mensalidade. Ponto.</p></div></div>
+        </div>
+        <a href="#planos" class="btn btn-wine btn-ic" style="margin-top:28px" data-cta data-dobra="3">Escolher plano <span class="ic"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="how-img">
+        <img src="assets/hero-pets.png" alt="Cachorro e gato lado a lado" width="940" height="900" loading="lazy">
+        <div class="tag-pill teal tp3"><i><span class="fa-solid fa-stethoscope"></span></i>Prevenção</div>
+        <div class="tag-pill wine tp4"><i><span class="fa-solid fa-hand-holding-heart"></span></i>Tranquilidade</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ===================== 4. PLANOS (CONVERSÃO) ===================== -->
+<section class="plans" id="planos">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Nossos planos</span>
+      <h2>Proteção que se adapta <span class="hl-wine">às suas necessidades</span></h2>
+      <p class="lead" style="max-width:520px;margin-left:auto;margin-right:auto">Mensalidade fixa. Sem coparticipação. Cobertura conforme a tabela abaixo, sem letra miúda.</p>
+    </div>
+
+    <div class="plans-grid">
+
+      <!-- TOTAL CARE -->
+      <article class="plan" data-plan="total_care">
+        <div class="pic"><i class="fa-solid fa-paw"></i></div>
+        <div class="name">Total Care</div>
+        <div class="tag">Essencial e preventivo</div>
+        <div class="price"><span class="cur">R$</span><span class="val">129</span><span class="cents">,90</span></div>
+        <div class="per">por mês</div>
+        <hr>
+        <ul>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>3</b> consultas veterinárias/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>2</b> consultas com especialista ou home care/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>12</b> teleconsultas/ano, sem carência</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>1</b> consulta de urgência/emergência/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>3</b> internações/ano (com 1 bolsa de soro)</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Vacinas antirrábica <b>1</b>/ano e polivalente <b>1</b>/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Exames: <b>5</b> laboratoriais básicos, <b>3</b> específicos e <b>2</b> de imagem (de cada)</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>10</b> retornos em 30 dias/ano</span></li>
+          <li class="more"><span class="ok"><i class="fa-solid fa-check"></i></span><span>Ambulatoriais: <b>15</b> básicos · <b>10</b> intermediários · <b>2</b> específicos/ano</span></li>
+          <li class="more"><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>1</b> aplicação de microchip</span></li>
+          <li class="more no-item"><span class="no"><i class="fa-solid fa-minus"></i></span><span>Cirurgias, anestesia, castração e profilaxia dentária</span></li>
+          <li class="more no-item"><span class="no"><i class="fa-solid fa-minus"></i></span><span>Vacina giárdia/gripe, fisioterapia e cremação</span></li>
+        </ul>
+        <button class="toggle" type="button"><span class="t-close">Ver cobertura completa ↓</span><span class="t-open">Ver menos ↑</span></button>
+        <a href="#planos" class="btn btn-teal btn-block checkout-link" data-plan="total_care" data-price="129.90">Escolher Total Care</a>
+      </article>
+
+      <!-- PLUS CARE -->
+      <article class="plan featured" data-plan="plus_care">
+        <div class="badge"><i class="fa-solid fa-star"></i>Mais queridinho</div>
+        <div class="pic"><i class="fa-solid fa-shield-heart"></i></div>
+        <div class="name">Plus Care</div>
+        <div class="tag">Completo e mais protegido</div>
+        <div class="price"><span class="cur">R$</span><span class="val">169</span><span class="cents">,90</span></div>
+        <div class="per">por mês</div>
+        <hr>
+        <div class="incl"><i class="fa-solid fa-circle-plus"></i>Tudo do Total Care, e mais:</div>
+        <ul>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>Cirurgias</b> (1 de cada) e <b>3</b> anestesias/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>Castração</b> e <b>profilaxia dentária</b></span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Vacina giárdia/gripe <b>2</b>/ano e polivalente <b>2</b>/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Mais consultas: <b>4</b> veterinárias, <b>3</b> especialista e <b>3</b> urgência/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>4</b> internações/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Mais exames: <b>10</b> básicos, <b>5</b> específicos e <b>3</b> de imagem (de cada)</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Ambulatoriais: <b>25</b> básicos · <b>15</b> intermediários · <b>6</b> específicos/ano</span></li>
+        </ul>
+        <a href="#planos" class="btn btn-white btn-block checkout-link" data-plan="plus_care" data-price="169.90">Escolher Plus Care</a>
+      </article>
+
+      <!-- PREMIUM CARE -->
+      <article class="plan" data-plan="premium_care">
+        <div class="pic"><i class="fa-solid fa-crown"></i></div>
+        <div class="name">Premium Care</div>
+        <div class="tag">Máxima proteção</div>
+        <div class="price"><span class="cur">R$</span><span class="val">239</span><span class="cents">,90</span></div>
+        <div class="per">por mês</div>
+        <hr>
+        <div class="incl"><i class="fa-solid fa-circle-plus"></i>Tudo do Plus Care, e mais:</div>
+        <ul>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>5</b> sessões de fisioterapia/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>Assistência funerária</b> (cremação) e <b>otoscopia</b></span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>Cirurgias</b> (2 de cada) e <b>4</b> anestesias/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Vacina giárdia/gripe <b>4</b>/ano e polivalente <b>3</b>/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Mais consultas: <b>5</b> veterinárias, <b>5</b> especialista e <b>5</b> urgência/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span><b>5</b> internações/ano</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Mais exames: <b>15</b> básicos, <b>7</b> específicos e <b>4</b> de imagem (de cada)</span></li>
+          <li><span class="ok"><i class="fa-solid fa-check"></i></span><span>Ambulatoriais: <b>35</b> básicos · <b>20</b> intermediários · <b>10</b> específicos/ano</span></li>
+        </ul>
+        <a href="#planos" class="btn btn-wine btn-block checkout-link" data-plan="premium_care" data-price="239.90">Escolher Premium Care</a>
+      </article>
+
+    </div>
+
+    <div class="plans-foot">
+      <div class="line">
+        <span><i class="fa-solid fa-check"></i>Todos os planos sem coparticipação</span>
+        <span><i class="fa-solid fa-check"></i>Rede credenciada no ES</span>
+        <span><i class="fa-solid fa-check"></i><a href="#carencias">Carências por procedimento</a></span>
+        <span data-needs="regulamento"><i class="fa-solid fa-check"></i><a href="#" class="link-regulamento" target="_blank" rel="noopener">Ver regulamento completo</a></span>
+      </div>
+      <div class="help" data-needs="whatsapp">Precisa de ajuda para escolher? <a href="#" class="btn btn-wa-solid link-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. REDE + CARÊNCIAS ===================== -->
+<section id="rede" class="net">
+  <div class="net-card">
+    <div class="container">
+      <div class="net-copy">
+        <span class="eyebrow">Rede credenciada</span>
+        <h2>Rede credenciada <span class="hl-wine">perto de você.</span></h2>
+        <p class="lead">Clínicas e hospitais veterinários no próprio Espírito Santo: Vitória, Vila Velha, Guarapari, Cachoeiro de Itapemirim, Colatina e São Mateus. Pensada pra quem mora aqui, não uma rede nacional onde a unidade mais próxima pode ficar a horas de distância.</p>
+        <a data-needs="rede" href="#" class="btn btn-teal link-rede" target="_blank" rel="noopener">Consultar a rede credenciada</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5b. CARÊNCIAS ===================== -->
+<section class="car-sec" id="carencias">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Prazos de carência por procedimento</span>
+      <h2>Carências que a gente mostra, <span class="hl-wine">não esconde.</span></h2>
+      <p class="lead">Carências flexíveis, com prazo por procedimento. Quanto antes você contrata, antes o seu pet está coberto pra tudo.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-node zero"><i class="fa-solid fa-bolt"></i><small>na hora</small></div>
+        <div class="tl-card"><h4>Liberado na hora</h4><ul><li>Teleconsulta 24h</li><li>Aplicação de microchip</li></ul></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-node"><b>30</b><small>dias</small></div>
+        <div class="tl-card"><h4>O básico do dia a dia</h4><ul><li>Consulta veterinária</li><li>Urgência e emergência</li><li>Vacina antirrábica</li><li>Ambulatoriais básicos</li></ul></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-node"><b>60</b><small>dias</small></div>
+        <div class="tl-card"><h4>Especialista e laboratório</h4><ul><li>Consulta com especialista</li><li>Vacinas giárdia e gripe</li><li>Exames laboratoriais</li></ul></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-node"><b>90</b><small>dias</small></div>
+        <div class="tl-card"><h4>Diagnóstico por imagem</h4><ul><li>Todos os exames de imagem cobertos pelo plano</li></ul></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-node"><b>120</b><small>dias</small></div>
+        <div class="tl-card"><h4>Internação e cirurgia</h4><ul><li>Internação</li><li>Cirurgias</li><li>Anestesia</li></ul></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-node"><b>180</b><small>dias</small></div>
+        <div class="tl-card"><h4>Procedimentos eletivos</h4><ul><li>Castração</li><li>Profilaxia dentária</li><li>Assistência funerária (cremação)</li></ul></div>
+      </div>
+    </div>
+    <div class="center" style="margin-top:44px"><a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="5">Escolher plano <span class="ic"><i class="fa-solid fa-arrow-right"></i></span></a></div>
+  </div>
+</section>
+
+<!-- ===================== 6. SOBRE + DIFERENCIAIS + INDICAÇÃO ===================== -->
+<section class="why" style="padding-top:72px">
+  <div class="container">
+    <div class="about">
+      <div>
+        <span class="eyebrow teal">Sobre a Petsalut</span>
+        <h2>Mais que um plano, <span class="hl-teal">uma família apaixonada.</span></h2>
+        <p class="lead">Desde 2017, a Petsalut promove bem-estar com acesso à medicina veterinária de ponta. Nosso propósito é a prevenção com previsibilidade financeira, possibilitando prolongar a vida dos pets sem surpresas no orçamento familiar.</p>
+        <div class="stat" data-needs="stat"><b id="stat-num"></b><span id="stat-label"></span></div>
+      </div>
+      <div class="blob-photo">
+        <img src="assets/tutor.jpg" alt="Tutor abraçando seu cachorro" width="1280" height="854" loading="lazy">
+      </div>
+    </div>
+
+    <div class="section-head center">
+      <span class="eyebrow">Por que a Petsalut</span>
+      <h2>Por que a Petsalut <span class="hl-wine">é diferente?</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ico t"><i class="fa-solid fa-shield-heart"></i></div>
+        <h3>Sem coparticipação</h3>
+        <p>Nos planos nacionais, você paga a mensalidade e ainda paga uma parte de cada atendimento. Na Petsalut, o valor pago é a mensalidade.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico w"><i class="fa-solid fa-location-dot"></i></div>
+        <h3>Rede regional no ES</h3>
+        <p>Credenciados em cidades do Espírito Santo, escolhidos pra quem mora aqui. Sem depender de uma rede nacional distante.</p>
+      </div>
+      <div class="why-card">
+        <div class="ico t"><i class="fa-solid fa-calendar-check"></i></div>
+        <h3>9 anos de mercado</h3>
+        <p>Empresa capixaba, com sede em Vitória, atendendo tutores do Espírito Santo desde 2017.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== 6b. INDICAÇÃO ===================== -->
+<section class="ref-sec">
+  <div class="referral" id="indicacao">
+    <div class="container ref-inner">
+      <div class="ref-text">
+        <span class="eyebrow">Programa de indicação</span>
+        <h3>Indicou, ganhou. <span class="hl-wine">Os dois.</span></h3>
+        <p>A cada indicação efetivada, você ganha <b>R$ 100,00 de desconto</b> na sua fatura. E não é só você que sai ganhando: o amigo indicado também recebe <b>R$ 50,00 de desconto</b> na fatura de adesão.</p>
+        <div class="ref-grid">
+        <div class="ref-box t"><small>Quem indica</small><strong>R$ 100</strong></div>
+        <div class="ref-box w"><small>Amigo indicado</small><strong>R$ 50</strong></div>
+        </div>
+        <a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="6">Escolher plano <span class="ic"><i class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
+      <div class="ref-img">
+        <img src="assets/indicacao-dog.png" alt="Cachorro yorkshire com laço vermelho" width="820" height="897" loading="lazy">
+        <div class="tag-pill teal tp5"><i><span class="fa-solid fa-gift"></span></i>R$ 100 pra você</div>
+        <div class="tag-pill wine tp6"><i><span class="fa-solid fa-user-plus"></span></i>R$ 50 pro amigo</div>
+        <span class="ref-spark s1"><i class="fa-solid fa-heart"></i></span>
+        <span class="ref-spark s2"><i class="fa-solid fa-star"></i></span>
+        <span class="ref-spark s3"><i class="fa-solid fa-paw"></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEPOIMENTOS (oculto até CONFIG.depoimentos) ===================== -->
+<section class="testi" data-needs="depoimentos">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Histórias reais de amor</span>
+      <h2>Veja quem <span class="hl-teal">confiou na Petsalut</span></h2>
+    </div>
+    <div class="testi-grid" id="testi-grid"></div>
+  </div>
+</section>
+
+<!-- ===================== 7. FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow teal">Perguntas frequentes</span>
+      <h2>Dúvidas que todo tutor tem <span class="hl-teal">antes de contratar</span></h2>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Vou pagar todo mês e não vou usar?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p>Consulta de rotina, vacina e exame também são uso, e não custam nada a mais. A maioria dos tutores adia esse cuidado por causa do custo. Com o plano, você deixa de adiar, e é isso que evita a emergência.</p>
+      </details>
+      <details>
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">E se na hora que eu precisar o plano não cobrir?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p>A cobertura de cada plano está na tabela acima, com quantidade por ano e carência por procedimento. Não tem regra escondida: o que está na tabela está no regulamento.<span data-needs="regulamento"> <a href="#" class="link-regulamento" target="_blank" rel="noopener">Ver regulamento completo</a>.</span></p>
+      </details>
+      <details>
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Tem carência? E se acontecer algo antes?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p>Sim, e os prazos estão expostos nesta página, por procedimento. Teleconsulta e microchip não têm carência. Consultas e urgência liberam em 30 dias; internação e cirurgia em 120 dias. <a href="#carencias">Ver tabela de carências</a>.</p>
+      </details>
+      <details>
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">A clínica credenciada vai ser longe da minha casa?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p>A rede é no próprio Espírito Santo: Vitória, Vila Velha, Colatina, Cachoeiro de Itapemirim, Guarapari e São Mateus.<span data-needs="rede"> <a href="#" class="link-rede" target="_blank" rel="noopener">Consulte a rede credenciada</a> antes de contratar.</span></p>
+      </details>
+      <details>
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Não é melhor guardar um dinheiro por mês pro caso de precisar?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p>A reserva leva meses pra juntar e some na primeira emergência. A mensalidade cobre o atendimento independente de quantos meses você pagou, respeitadas as carências.</p>
+      </details>
+      <details>
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Tem coparticipação ou taxa por atendimento?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p>Não. Na Petsalut, o valor pago é a mensalidade.</p>
+      </details>
+      <details data-needs="faq_multipets">
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Posso contratar pra mais de um pet?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p id="faq-multipets"></p>
+      </details>
+      <details data-needs="faq_pagamento">
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Como funciona o pagamento?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p id="faq-pagamento"></p>
+      </details>
+      <details data-needs="faq_poscompra">
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">O que acontece depois que eu contratar?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p id="faq-poscompra"></p>
+      </details>
+      <details data-needs="faq_elegibilidade">
+        <summary><span class="q"><i class="fa-regular fa-circle-question"></i></span><span class="txt">Meu pet tem idade ou raça que não aceita?</span><span class="pm"><i class="fa-solid fa-plus"></i></span></summary>
+        <p id="faq-elegibilidade"></p>
+      </details>
+    </div>
+    <div class="faq-cta" data-needs="whatsapp">
+      <p>Ainda ficou com dúvida? Fale com a gente.</p>
+      <a href="#" class="btn btn-outline btn-wa link-whatsapp" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Tirar dúvida no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 8. CTA FINAL + RODAPÉ ===================== -->
+<section class="final">
+  <span class="dots" style="left:-30px;bottom:20px"></span>
+  <span class="dots wine" style="right:-30px;top:20px"></span>
+  <div class="container">
+    <span class="eyebrow">Comece hoje</span>
+    <h2>Da próxima vez que o seu pet ficar quieto, você vai se preocupar com ele. <span class="hl-wine">Só com ele.</span></h2>
+    <p>Mensalidade fixa a partir de R$ 129,90. Sem coparticipação. Rede no ES. Contrate online agora e comece a contar as carências hoje.</p>
+    <a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="8">Quero parar de me preocupar! <span class="ic"><i class="fa-solid fa-arrow-right"></i></span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="top">
+      <div>
+        <img src="assets/logo.png" alt="Petsalut">
+        <p style="color:rgba(255,255,255,.8);max-width:340px">Cuidamos de quem sempre cuidou de você. Plano de saúde pet com mensalidade fixa e rede credenciada no Espírito Santo.</p>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <nav>
+          <a href="#planos">Planos</a>
+          <a href="#rede">Rede credenciada</a>
+          <a href="#indicacao">Indique e ganhe</a>
+          <a data-needs="regulamento" class="link-regulamento" href="#" target="_blank" rel="noopener">Regulamento</a>
+          <a data-needs="privacidade" class="link-privacidade" href="#" target="_blank" rel="noopener">Política de privacidade</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Fale com a Petsalut</h4>
+        <div class="contacts" id="contacts"></div>
+        <p style="color:rgba(255,255,255,.65);font-size:12px;margin-top:10px" id="footer-endereco"></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span id="footer-empresa">© 2026 Petsalut. Todos os direitos reservados.</span>
+      <span>Atendimento seg–sex, 8h às 17h</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+/* =========================================================
+   CONFIG — preencher com os dados pendentes do briefing.
+   Campos vazios mantêm o elemento correspondente oculto.
+   Valores já preenchidos vieram do site petsalut.com e
+   precisam de confirmação do cliente.
+   ========================================================= */
+var CONFIG = {
+  checkout: {                     // Checkout único: o plano é escolhido dentro dele. O parâmetro ?plano= hoje é só rastreio;
+                                  // se o dev do checkout implementar a pré-seleção (ver README), passa a funcionar sozinho.
+    total_care:   'https://conta.petsalut.com/contratar?plano=total_care&plan_id=15',
+    plus_care:    'https://conta.petsalut.com/contratar?plano=plus_care&plan_id=9',
+    premium_care: 'https://conta.petsalut.com/contratar?plano=premium_care&plan_id=10'
+  },
+  whatsapp:     '5527998024119',  // Comercial 27 99802-4119 (confirmado)
+  whatsappMsg:  'Olá! Vi a página da Petsalut e tenho uma dúvida sobre os planos.',
+  regulamento:  '',               // URL do regulamento completo (PENDÊNCIA)
+  rede:         '',               // URL da lista/mapa da rede credenciada (PENDÊNCIA)
+  privacidade:  '',               // URL da política de privacidade (PENDÊNCIA)
+  empresa:      '',               // ex.: 'Petsalut Ltda · CNPJ 00.000.000/0001-00' (PENDÊNCIA)
+  endereco:     'Rua Carlos Romero Marangoni, 370, sala 202, Jardim Camburi, Vitória/ES · CEP 29.090-620', // do site — confirmar
+  contatos: [                     // do site — confirmar
+    { label: 'Comercial',    value: '27 99802-4119', note: 'WhatsApp e ligação' },
+    { label: 'Suporte',      value: '0800 006 0123', note: 'Clientes' },
+    { label: 'Credenciados', value: '27 99842-3695', note: 'Clínicas e veterinários' }
+  ],
+  stat: { num: '', label: '' },   // ex.: { num: '+ de 15k', label: 'consultas realizadas' } — confirmar número real
+  depoimentos: [                  // ex.: { texto: '...', nome: 'Camila', pet: 'Thor', cidade: 'Vitória' } (PENDÊNCIA)
+  ],
+  faq: {                          // Respostas pendentes; vazias = pergunta oculta
+    multipets:     '',
+    pagamento:     '',
+    poscompra:     '',
+    elegibilidade: ''
+  }
+};
+
+(function(){
+  var dl = window.dataLayer = window.dataLayer || [];
+
+  /* ---- UTM passthrough: repassa parâmetros da LP para o checkout ---- */
+  var qs = window.location.search.replace(/^\?/, '');
+  function withParams(url){
+    if(!url || !qs) return url;
+    return url + (url.indexOf('?') > -1 ? '&' : '?') + qs;
+  }
+  function ready(sel, href){
+    document.querySelectorAll(sel).forEach(function(el){
+      if(href) el.href = href;
+      el.classList.add('ready');
+    });
+  }
+
+  /* ---- Aplica CONFIG ---- */
+  if(CONFIG.regulamento){ ready('[data-needs="regulamento"]'); ready('.link-regulamento', CONFIG.regulamento); }
+  if(CONFIG.rede){ ready('[data-needs="rede"]'); ready('.link-rede', CONFIG.rede); }
+  if(CONFIG.privacidade){ ready('[data-needs="privacidade"]'); ready('.link-privacidade', CONFIG.privacidade); }
+  if(CONFIG.whatsapp){
+    ready('[data-needs="whatsapp"]');
+    ready('.link-whatsapp', 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(CONFIG.whatsappMsg));
+    document.querySelectorAll('.link-whatsapp').forEach(function(a){ a.addEventListener('click', function(){ dl.push({ event: 'click_whatsapp' }); }); });
+  }
+  if(CONFIG.empresa){ document.getElementById('footer-empresa').textContent = '© 2026 ' + CONFIG.empresa + '. Todos os direitos reservados.'; }
+  if(CONFIG.endereco){ document.getElementById('footer-endereco').textContent = CONFIG.endereco; }
+  if(CONFIG.stat && CONFIG.stat.num){
+    document.getElementById('stat-num').textContent = CONFIG.stat.num;
+    document.getElementById('stat-label').textContent = CONFIG.stat.label;
+    ready('[data-needs="stat"]');
+  }
+  var contacts = document.getElementById('contacts');
+  (CONFIG.contatos || []).forEach(function(c){
+    var d = document.createElement('div'); d.className = 'contact';
+    d.innerHTML = '<small></small><b></b><span></span>';
+    d.children[0].textContent = c.label; d.children[1].textContent = c.value; d.children[2].textContent = c.note || '';
+    contacts.appendChild(d);
+  });
+  if(CONFIG.depoimentos && CONFIG.depoimentos.length){
+    var grid = document.getElementById('testi-grid');
+    CONFIG.depoimentos.forEach(function(t){
+      var d = document.createElement('div'); d.className = 'testi-card';
+      d.innerHTML = '<p></p><b></b><small></small>';
+      d.children[0].textContent = '“' + t.texto + '”';
+      d.children[1].textContent = t.nome + (t.pet ? ' e ' + t.pet : '');
+      d.children[2].textContent = t.cidade || '';
+      grid.appendChild(d);
+    });
+    ready('[data-needs="depoimentos"]');
+  }
+  Object.keys(CONFIG.faq).forEach(function(k){
+    if(CONFIG.faq[k]){ document.getElementById('faq-' + k).textContent = CONFIG.faq[k]; ready('[data-needs="faq_' + k + '"]'); }
+  });
+
+  /* ---- Links de checkout ---- */
+  document.querySelectorAll('.checkout-link').forEach(function(a){
+    var plan = a.getAttribute('data-plan');
+    var url = CONFIG.checkout[plan];
+    if(url){ a.href = withParams(url); }
+    a.addEventListener('click', function(e){
+      dl.push({ event: 'click_escolher_plano', plano: plan, valor: parseFloat(a.getAttribute('data-price')) });
+      if(!url){ e.preventDefault(); alert('Checkout do plano ainda não configurado (CONFIG.checkout.' + plan + ').'); }
+    });
+  });
+
+  /* ---- CTAs de scroll ---- */
+  document.querySelectorAll('[data-cta]').forEach(function(a){
+    a.addEventListener('click', function(){ dl.push({ event: 'click_cta_scroll', dobra: a.getAttribute('data-dobra') }); });
+  });
+
+  /* ---- Toggle cobertura completa (no desktop os cards já abrem completos) ---- */
+  document.querySelectorAll('.plan .toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){ btn.closest('.plan').classList.toggle('open'); });
+  });
+
+  /* ---- Evento view_planos quando a tabela entra na tela ---- */
+  var planos = document.getElementById('planos');
+  var viewed = false;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting && !viewed){ viewed = true; dl.push({ event: 'view_planos' }); }
+      });
+    }, { threshold: 0.15 }).observe(planos);
+  }
+})();
+</script>
+</body>
+</html>

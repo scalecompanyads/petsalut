@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contratação confirmada — Petsalut</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/logo.png">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M2MNND4K');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#009D96;--teal-dark:#007A74;--teal-tint:#E6F5F4;--wine:#A51437;--ink:#1F2A2E;--ink-2:#4A5B60;--bg:#FFFBF7;--line:#E4E9E9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+  header{padding:20px;border-bottom:1px solid var(--line);background:#fff}
+  header img{height:34px;display:block;margin:0 auto}
+  main{flex:1;display:grid;place-items:center;padding:48px 20px}
+  .card{max-width:640px;width:100%;background:#fff;border:1px solid var(--line);border-radius:24px;padding:40px 32px;box-shadow:0 10px 30px rgba(20,38,43,.08);text-align:center}
+  .check{width:72px;height:72px;border-radius:50%;background:var(--teal-tint);color:var(--teal);display:grid;place-items:center;margin:0 auto 20px}
+  h1{font-size:clamp(26px,4vw,34px);line-height:1.15;margin-bottom:12px}
+  p{color:var(--ink-2)}
+  .plan{display:inline-block;margin:18px 0 26px;background:var(--teal-tint);color:var(--teal-dark);font-weight:900;padding:10px 20px;border-radius:999px}
+  ol{text-align:left;margin:0 auto 28px;max-width:480px;padding-left:22px;color:var(--ink-2)}
+  ol li{margin-bottom:10px}
+  ol li b{color:var(--ink)}
+  .ref{background:linear-gradient(135deg,var(--wine),#7E0F2B);color:#fff;border-radius:18px;padding:22px;margin-top:8px}
+  .ref b{font-size:18px;display:block;margin-bottom:4px}
+  .ref p{color:rgba(255,255,255,.9);font-size:15px}
+  footer{padding:24px;text-align:center;font-size:13px;color:var(--ink-2)}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2MNND4K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header><img src="assets/logo.png" alt="Petsalut"></header>
+
+<main>
+  <div class="card">
+    <div class="check"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+    <h1>Pronto. Seu pet agora tem um plano de saúde.</h1>
+    <p>Pagamento aprovado e contratação confirmada.</p>
+    <div class="plan" id="plano-nome">Plano contratado</div>
+
+    <ol>
+      <li><b>Confirmação:</b> <span id="txt-confirmacao">você vai receber a confirmação da contratação em instantes.</span></li>
+      <li><b>Acesso ao plano:</b> <span id="txt-carteirinha">em seguida enviamos a sua carteirinha e as orientações de como usar a rede credenciada.</span></li>
+      <li><b>Ativação:</b> <span id="txt-ativacao">as carências começam a contar a partir da ativação do plano.</span></li>
+    </ol>
+
+    <div class="ref">
+      <b>Indique um amigo e ganhe R$ 100 de desconto</b>
+      <p>Seu amigo ganha R$ 50 na primeira fatura dele. <span id="txt-indicacao"></span></p>
+    </div>
+  </div>
+</main>
+
+<footer>Petsalut · Vitória/ES</footer>
+
+<script>
+/* CONFIG — textos pendentes do briefing. Substituir quando o cliente confirmar. */
+var CONFIG = {
+  confirmacao: '',   // ex.: 'enviamos a confirmação por e-mail e WhatsApp.'
+  carteirinha: '',   // ex.: 'sua carteirinha digital chega por WhatsApp em até X horas.'
+  ativacao:    '',   // ex.: 'o plano fica ativo em até X dias úteis.'
+  indicacao:   ''    // ex.: 'Para indicar, envie seu código XXXX pelo WhatsApp.'
+};
+(function(){
+  Object.keys(CONFIG).forEach(function(k){ if(CONFIG[k]) document.getElementById('txt-' + k).textContent = CONFIG[k]; });
+
+  /* Lê plano/valor da URL de retorno do checkout: obrigado.html?plano=plus_care&valor=169.90 */
+  var q = {}; window.location.search.replace(/^\?/, '').split('&').forEach(function(kv){ var p = kv.split('='); if(p[0]) q[decodeURIComponent(p[0])] = decodeURIComponent(p[1] || ''); });
+  var nomes = { total_care: 'Total Care', plus_care: 'Plus Care', premium_care: 'Premium Care' };
+  var precos = { total_care: 129.90, plus_care: 169.90, premium_care: 239.90 };
+  if(q.plano && nomes[q.plano]){
+    document.getElementById('plano-nome').textContent = 'Plano ' + nomes[q.plano] + ' — R$ ' + precos[q.plano].toFixed(2).replace('.', ',') + '/mês';
+  }
+  var valor = parseFloat(q.valor) || precos[q.plano] || 0;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'purchase', plano: q.plano || '', valor: valor, moeda: 'BRL' });
+})();
+</script>
+</body>
+</html>
