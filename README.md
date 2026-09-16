@@ -64,7 +64,7 @@ Com isso os links da LP já passam a abrir o checkout com o plano marcado, sem m
 
 1. **Preço do Plus Care**: briefing traz R$ 1.629,90; site atual traz R$ 169,90. A página usa R$ 169,90.
 2. **Tabela de cobertura e carências**: extraída do site atual (petsalut.com). Validar que está vigente.
-3. **Lista de cidades**: briefing tem um item em branco. Página usa Vitória, Vila Velha, Colatina, Cachoeiro de Itapemirim, Guarapari, São Mateus.
+3. **Lista de cidades**: briefing tem um item em branco. Página usa as 9 cidades do mapa enviado pelo cliente: Vitória, Vila Velha, Serra, Cariacica, Guarapari, Cachoeiro de Itapemirim, Colatina, Linhares e São Mateus.
 4. **Foto `assets/tutor.jpg`**: confirmar quem é e autorização de uso de imagem.
 5. **"Sexta à noite" no H1**: horário publicado de consulta é seg–sex 7h–20h / sáb 7h–14h. Confirmar se a urgência atende fora disso; se não, trocar por "quando precisar".
 6. **Selo "Mais queridinho"** no Plus Care: é o texto usado no site atual; confirmar se continua valendo.
