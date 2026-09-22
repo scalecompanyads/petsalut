@@ -668,22 +668,74 @@
       border: 1px solid var(--line);
       border-radius: 24px;
       box-shadow: 0 18px 44px rgba(27, 43, 47, .10);
-      padding: 22px;
-      display: grid;
-      gap: 18px
-    }
-
-    @media(min-width:640px) {
-      .trust {
-        grid-template-columns: 1fr 1fr
-      }
+      padding: 24px
     }
 
     @media(min-width:1000px) {
       .trust {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 26px 28px;
-        gap: 22px
+        padding: 30px 32px
+      }
+    }
+
+    .trust-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 16px;
+      padding-bottom: 20px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .trust-tag {
+      flex: none;
+      background: var(--wine);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 999px
+    }
+
+    .trust-head h2 {
+      flex: 1;
+      min-width: 240px;
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.25;
+      margin: 0
+    }
+
+    .trust-link {
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--wine);
+      text-decoration: none;
+      white-space: nowrap
+    }
+
+    .trust-link:hover {
+      text-decoration: underline
+    }
+
+    .trust-link .ic-svg {
+      font-size: 12px
+    }
+
+    .trust-grid {
+      display: grid;
+      gap: 20px
+    }
+
+    @media(min-width:760px) {
+      .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px
       }
     }
 
@@ -819,6 +871,158 @@
       margin: 0 auto;
       text-align: center;
       line-height: 1.5
+    }
+
+    /* 2b. Custo de uma emergência */
+    .custo {
+      background: #fff
+    }
+
+    .custo-grid {
+      display: grid;
+      gap: 18px
+    }
+
+    @media(min-width:640px) {
+      .custo-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(min-width:1000px) {
+      .custo-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 22px
+      }
+    }
+
+    .custo-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px 24px;
+      box-shadow: 0 10px 28px rgba(27, 43, 47, .06);
+      transition: transform .25s, box-shadow .25s
+    }
+
+    .custo-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(11, 95, 90, .12)
+    }
+
+    .custo-card .ico {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: var(--mint);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px
+    }
+
+    .custo-card .ico .ic-svg {
+      font-size: 19px
+    }
+
+    .custo-card h3 {
+      font-size: 15px;
+      color: var(--ink-2);
+      font-weight: 700;
+      margin-bottom: 8px
+    }
+
+    .custo-card .valor {
+      font-size: clamp(17px, 1.7vw, 20px);
+      white-space: nowrap;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      line-height: 1.2
+    }
+
+    .custo-card .valor span {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink-3);
+      margin: 0 2px
+    }
+
+    .custo-card .valor small {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink-3)
+    }
+
+    .custo-card .bar {
+      margin-top: 16px;
+      height: 6px;
+      border-radius: 6px;
+      background: var(--line);
+      overflow: hidden
+    }
+
+    .custo-card .bar i {
+      display: block;
+      height: 100%;
+      border-radius: 6px;
+      background: linear-gradient(90deg, var(--teal), #7FC9C4)
+    }
+
+    .custo-card.destaque {
+      border-color: var(--wine);
+      box-shadow: 0 18px 44px rgba(165, 20, 55, .14)
+    }
+
+    .custo-card.destaque .ico {
+      background: var(--pink);
+      color: var(--wine)
+    }
+
+    .custo-card.destaque .valor {
+      color: var(--wine)
+    }
+
+    .custo-card.destaque .bar i {
+      background: linear-gradient(90deg, #D24A6E, var(--wine))
+    }
+
+    .custo-fechamento {
+      margin-top: 36px;
+      background: var(--mint-3);
+      border: 1px solid var(--mint-2);
+      border-radius: 28px;
+      padding: 28px 26px;
+      display: grid;
+      gap: 20px;
+      align-items: center
+    }
+
+    @media(min-width:900px) {
+      .custo-fechamento {
+        grid-template-columns: 1fr auto;
+        padding: 32px 36px;
+        gap: 32px
+      }
+    }
+
+    .custo-fechamento h3 {
+      font-size: clamp(19px, 2.2vw, 23px);
+      line-height: 1.25;
+      margin-bottom: 8px
+    }
+
+    .custo-fechamento p {
+      font-size: 15px;
+      max-width: 640px
+    }
+
+    .custo-fechamento p b {
+      color: var(--wine)
+    }
+
+    .custo-fechamento .btn {
+      justify-self: start
     }
 
     /* 3. Como funciona */
@@ -2546,44 +2750,45 @@
     </div>
   </section>
 
-  <!-- ===================== CARD DE CONFIANÇA (entre hero e problema) ===================== -->
+  <!-- ===================== CARD PREMIUM CARE (entre hero e problema) ===================== -->
   <div class="trust-wrap">
     <div class="container">
       <div class="trust">
-        <div class="trust-item">
-          <div class="ico t"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-shield-heart" />
-            </svg></div>
-          <div>
-            <h3>Sem coparticipação</h3>
-            <p>O valor pago é a mensalidade. Nada a mais por consulta, exame ou internação.</p>
-          </div>
+        <div class="trust-head">
+          <span class="trust-tag">Premium Care</span>
+          <h2>Proteção completa, com os procedimentos já inclusos</h2>
+          <a href="#planos" class="trust-link" data-cta data-dobra="trust">Ver o que está incluso <svg class="ic-svg"
+              aria-hidden="true">
+              <use href="#i-solid-arrow-right" />
+            </svg></a>
         </div>
-        <div class="trust-item">
-          <div class="ico w"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-location-dot" />
-            </svg></div>
-          <div>
-            <h3>Rede credenciada no ES</h3>
-            <p>Clínicas e hospitais em Vitória, Vila Velha, Guarapari e outras cidades capixabas.</p>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="ico w"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-shield-heart" />
+              </svg></div>
+            <div>
+              <h3>Cirurgias, castração e profilaxia dentária</h3>
+              <p>Procedimentos que a maioria dos planos deixa de fora entram na cobertura, sem taxa extra.</p>
+            </div>
           </div>
-        </div>
-        <div class="trust-item">
-          <div class="ico t"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-calendar-check" />
-            </svg></div>
-          <div>
-            <h3>9 anos de mercado</h3>
-            <p>Desde 2017 cuidando de cães e gatos no Espírito Santo.</p>
+          <div class="trust-item">
+            <div class="ico t"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-shield-heart" />
+              </svg></div>
+            <div>
+              <h3>Vacinas estendidas</h3>
+              <p>Além da antirrábica e da polivalente, o Premium cobre giárdia e gripe, até 4 doses por ano.</p>
+            </div>
           </div>
-        </div>
-        <div class="trust-item">
-          <div class="ico w"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-heart" />
-            </svg></div>
-          <div>
-            <h3>Felicidade</h3>
-            <p>Seu pet atendido quando precisar, sem susto no orçamento da família.</p>
+          <div class="trust-item">
+            <div class="ico w"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-calendar-check" />
+              </svg></div>
+            <div>
+              <h3>Limite ampliado de exames e emergências</h3>
+              <p>5 consultas de urgência por ano e o maior limite de exames laboratoriais e de imagem.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -2631,6 +2836,66 @@
           data-dobra="2">Quero parar de me preocupar! <span class="ic"><svg class="ic-svg" aria-hidden="true">
               <use href="#i-solid-arrow-right" />
             </svg></span></a></div>
+    </div>
+  </section>
+
+  <!-- ===================== 2b. CUSTO DE UMA EMERGÊNCIA ===================== -->
+  <section class="custo" id="custos">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">O custo de uma emergência</span>
+        <h2>Quando seu pet precisa, <span class="hl-wine">você precisa estar preparado.</span></h2>
+        <p class="lead">Uma emergência veterinária pode custar muito mais do que você imagina. Uma consulta inesperada
+          pode ser apenas o começo: exames, medicamentos, internação e cirurgia aumentam rapidamente o valor de um
+          atendimento particular.</p>
+      </div>
+
+      <div class="custo-grid">
+        <div class="custo-card">
+          <div class="ico"><svg class="ic-svg" aria-hidden="true">
+              <use href="#i-regular-circle-question" />
+            </svg></div>
+          <h3>Consulta veterinária</h3>
+          <div class="valor">R$ 180 <span>a</span> R$ 300</div>
+          <div class="bar"><i style="width:12%"></i></div>
+        </div>
+        <div class="custo-card">
+          <div class="ico"><svg class="ic-svg" aria-hidden="true">
+              <use href="#i-solid-stethoscope" />
+            </svg></div>
+          <h3>Exames</h3>
+          <div class="valor">R$ 350 <span>a</span> R$ 600</div>
+          <div class="bar"><i style="width:24%"></i></div>
+        </div>
+        <div class="custo-card">
+          <div class="ico"><svg class="ic-svg" aria-hidden="true">
+              <use href="#i-solid-calendar-check" />
+            </svg></div>
+          <h3>Internação</h3>
+          <div class="valor">R$ 400 <span>a</span> R$ 800<small>/dia</small></div>
+          <div class="bar"><i style="width:32%"></i></div>
+        </div>
+        <div class="custo-card destaque">
+          <div class="ico"><svg class="ic-svg" aria-hidden="true">
+              <use href="#i-solid-shield-heart" />
+            </svg></div>
+          <h3>Cirurgias de urgência</h3>
+          <div class="valor">R$ 1.800 <span>a</span> R$ 5.000+</div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </div>
+      </div>
+
+      <div class="custo-fechamento">
+        <div>
+          <h3>Com a Petsalut, você se prepara antes do problema acontecer.</h3>
+          <p>Por uma mensalidade a partir de <b>R$ 129,90</b>, seu pet pode contar com uma estrutura de atendimento
+            veterinário de acordo com a cobertura escolhida.</p>
+        </div>
+        <a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="2b">Quero conhecer os planos <span
+            class="ic"><svg class="ic-svg" aria-hidden="true">
+              <use href="#i-solid-arrow-right" />
+            </svg></span></a>
+      </div>
     </div>
   </section>
 
@@ -3205,11 +3470,10 @@
     <span class="dots wine" style="right:-30px;top:20px"></span>
     <div class="container">
       <span class="eyebrow">Comece hoje</span>
-      <h2>Da próxima vez que o seu pet ficar quieto, você vai se preocupar com ele. <span class="hl-wine">Só com
-          ele.</span></h2>
-      <p>Mensalidade fixa a partir de R$ 129,90. Sem coparticipação. Rede no ES. Contrate online agora e comece a contar
-        as carências hoje.</p>
-      <a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="8">Quero parar de me preocupar! <span
+      <h2>Não espere precisar <span class="hl-wine">para se preparar.</span></h2>
+      <p>Escolha agora o plano que combina com o seu pet. Planos a partir de R$ 129,90/mês, sem coparticipação nos
+        procedimentos cobertos.</p>
+      <a href="#planos" class="btn btn-wine btn-ic" data-cta data-dobra="8">Quero proteger meu pet <span
           class="ic"><svg class="ic-svg" aria-hidden="true">
             <use href="#i-solid-arrow-right" />
           </svg></span></a>
