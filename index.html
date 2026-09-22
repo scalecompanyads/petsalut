@@ -835,21 +835,40 @@
       background: #fff
     }
 
+    .custo-top {
+      display: grid;
+      gap: 32px;
+      align-items: center
+    }
+
+    @media(min-width:1000px) {
+      .custo-top {
+        grid-template-columns: minmax(0, 440px) minmax(0, 1fr);
+        gap: 56px
+      }
+    }
+
+    .custo-top>* {
+      min-width: 0
+    }
+
+    .custo-copy h2 {
+      margin: 14px 0 14px
+    }
+
+    .custo-copy .lead {
+      margin: 0
+    }
+
     .custo-grid {
       display: grid;
       gap: 18px
     }
 
-    @media(min-width:640px) {
+    @media(min-width:560px) {
       .custo-grid {
-        grid-template-columns: 1fr 1fr
-      }
-    }
-
-    @media(min-width:1000px) {
-      .custo-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 22px
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
       }
     }
 
@@ -2836,15 +2855,16 @@
   <!-- ===================== 2b. CUSTO DE UMA EMERGÊNCIA ===================== -->
   <section class="custo" id="custos">
     <div class="container">
-      <div class="section-head center">
-        <span class="eyebrow">O custo de uma emergência</span>
-        <h2>Quando seu pet precisa, <span class="hl-wine">você precisa estar preparado.</span></h2>
-        <p class="lead">Uma emergência veterinária pode custar muito mais do que você imagina. Uma consulta inesperada
-          pode ser apenas o começo: exames, medicamentos, internação e cirurgia aumentam rapidamente o valor de um
-          atendimento particular.</p>
-      </div>
+      <div class="custo-top">
+        <div class="custo-copy">
+          <span class="eyebrow">O custo de uma emergência</span>
+          <h2>Quando seu pet precisa, <span class="hl-wine">você precisa estar preparado.</span></h2>
+          <p class="lead">Uma emergência veterinária pode custar muito mais do que você imagina. Uma consulta
+            inesperada pode ser apenas o começo: exames, medicamentos, internação e cirurgia aumentam rapidamente o
+            valor de um atendimento particular.</p>
+        </div>
 
-      <div class="custo-grid">
+        <div class="custo-grid">
         <div class="custo-card">
           <div class="ico"><svg class="ic-svg" aria-hidden="true">
               <use href="#i-regular-circle-question" />
@@ -2876,6 +2896,7 @@
           <h3>Cirurgias de urgência</h3>
           <div class="valor">R$ 1.800 <span>a</span> R$ 5.000+</div>
           <div class="bar"><i style="width:100%"></i></div>
+        </div>
         </div>
       </div>
 
