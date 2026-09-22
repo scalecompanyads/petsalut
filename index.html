@@ -332,7 +332,7 @@
 
     @media(min-width:900px) {
       .hero {
-        padding: 72px 0 120px;
+        padding: 92px 0 140px;
         min-height: 0;
         max-height: none;
         display: flex;
@@ -677,65 +677,22 @@
       }
     }
 
-    .trust-head {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px 16px;
-      padding-bottom: 20px;
-      margin-bottom: 22px;
-      border-bottom: 1px solid var(--line)
-    }
-
-    .trust-tag {
-      flex: none;
-      background: var(--wine);
-      color: #fff;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      padding: 7px 14px;
-      border-radius: 999px
-    }
-
-    .trust-head h2 {
-      flex: 1;
-      min-width: 240px;
-      font-size: clamp(18px, 2vw, 22px);
-      line-height: 1.25;
-      margin: 0
-    }
-
-    .trust-link {
-      flex: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 800;
-      color: var(--wine);
-      text-decoration: none;
-      white-space: nowrap
-    }
-
-    .trust-link:hover {
-      text-decoration: underline
-    }
-
-    .trust-link .ic-svg {
-      font-size: 12px
-    }
-
     .trust-grid {
       display: grid;
       gap: 20px
     }
 
-    @media(min-width:760px) {
+    @media(min-width:620px) {
       .trust-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 26px
+        grid-template-columns: 1fr 1fr;
+        gap: 22px
+      }
+    }
+
+    @media(min-width:1000px) {
+      .trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px 26px
       }
     }
 
@@ -2754,40 +2711,77 @@
   <div class="trust-wrap">
     <div class="container">
       <div class="trust">
-        <div class="trust-head">
-          <span class="trust-tag">Premium Care</span>
-          <h2>Proteção completa, com os procedimentos já inclusos</h2>
-          <a href="#planos" class="trust-link" data-cta data-dobra="trust">Ver o que está incluso <svg class="ic-svg"
-              aria-hidden="true">
-              <use href="#i-solid-arrow-right" />
-            </svg></a>
-        </div>
         <div class="trust-grid">
-          <div class="trust-item">
-            <div class="ico w"><svg class="ic-svg" aria-hidden="true">
-                <use href="#i-solid-shield-heart" />
-              </svg></div>
-            <div>
-              <h3>Cirurgias, castração e profilaxia dentária</h3>
-              <p>Procedimentos que a maioria dos planos deixa de fora entram na cobertura, sem taxa extra.</p>
-            </div>
-          </div>
           <div class="trust-item">
             <div class="ico t"><svg class="ic-svg" aria-hidden="true">
                 <use href="#i-solid-shield-heart" />
               </svg></div>
             <div>
-              <h3>Vacinas estendidas</h3>
-              <p>Além da antirrábica e da polivalente, o Premium cobre giárdia e gripe, até 4 doses por ano.</p>
+              <h3>Sem coparticipação</h3>
+              <p>O valor pago é a mensalidade, sem taxa por atendimento.</p>
             </div>
           </div>
           <div class="trust-item">
             <div class="ico w"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-location-dot" />
+              </svg></div>
+            <div>
+              <h3>Rede credenciada no ES</h3>
+              <p>Clínicas e hospitais em 9 cidades capixabas.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="ico t"><svg class="ic-svg" aria-hidden="true">
                 <use href="#i-solid-calendar-check" />
               </svg></div>
             <div>
-              <h3>Limite ampliado de exames e emergências</h3>
-              <p>5 consultas de urgência por ano e o maior limite de exames laboratoriais e de imagem.</p>
+              <h3>9 anos de mercado</h3>
+              <p>Desde 2017 cuidando de cães e gatos no Espírito Santo.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="ico w"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-heart" />
+              </svg></div>
+            <div>
+              <h3>Felicidade</h3>
+              <p>Seu pet atendido quando precisar, sem susto no orçamento.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="ico w"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-paw" />
+              </svg></div>
+            <div>
+              <h3>Cirurgias e castração</h3>
+              <p>Com profilaxia dentária, a partir do Plus Care.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="ico t"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-stethoscope" />
+              </svg></div>
+            <div>
+              <h3>Vacinas estendidas</h3>
+              <p>Giárdia e gripe, além da antirrábica e da polivalente.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="ico w"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-crown" />
+              </svg></div>
+            <div>
+              <h3>Limites ampliados no Premium</h3>
+              <p>Mais exames, urgências e até fisioterapia e otoscopia.</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="ico t"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-circle-plus" />
+              </svg></div>
+            <div>
+              <h3>Contratação 100% online</h3>
+              <p>Escolha o plano e finalize em poucos minutos.</p>
             </div>
           </div>
         </div>
