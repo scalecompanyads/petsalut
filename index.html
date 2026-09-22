@@ -341,6 +341,17 @@
       }
     }
 
+    /* tapa a faixa de fundo que aparece à esquerda por causa do deslocamento da foto */
+    @media(min-width:900px) {
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, #F0ECE9 0, #F0ECE9 135px, rgba(240, 236, 233, 0) 240px);
+        pointer-events: none
+      }
+    }
+
     .hero .container {
       display: grid;
       gap: 28px;
