@@ -6,7 +6,7 @@ Página de vendas de 8 dobras: Meta Ads → `index.html` → checkout do plano �
 
 - `index.html` — landing page (HTML/CSS/JS em um arquivo só)
 - `obrigado.html` — página pós-checkout (dispara `purchase` no dataLayer)
-- `assets/` — logo, hero-bg.jpg (hero), hero-pets.png (dobra 3), indicacao-dog.png (indicação), rede-mapa.jpg (rede credenciada), tutor.jpg (sobre)
+- `assets/` — logo, hero-bg.jpg (hero), hero-pets.jpg (dobra 3), indicacao-dog.jpg (indicação), rede-mapa.jpg (rede credenciada), tutor.jpg (sobre), depo-1/2/3.jpg (depoimentos)
 
 ## O que precisa ser preenchido antes de publicar
 
@@ -68,7 +68,7 @@ Com isso os links da LP já passam a abrir o checkout com o plano marcado, sem m
 4. **Foto `assets/tutor.jpg`**: confirmar quem é e autorização de uso de imagem.
 5. **"Sexta à noite" no H1**: horário publicado de consulta é seg–sex 7h–20h / sáb 7h–14h. Confirmar se a urgência atende fora disso; se não, trocar por "quando precisar".
 6. **Selo "Mais queridinho"** no Plus Care: é o texto usado no site atual; confirmar se continua valendo.
-7. **Depoimentos**: não incluídos (sem texto autorizado). Espaço natural: dobra 6, após os 3 diferenciais.
+7. **Depoimentos**: 3 vídeos do canal oficial da Petsalut no YouTube (Shorts), com thumbnail local e player carregado só no clique.
 8. **Domínio / hospedagem** e **Pixel Meta** (configurar no GTM).
 
 ## Eventos no dataLayer (para o GTM)
@@ -79,6 +79,7 @@ Com isso os links da LP já passam a abrir o checkout com o plano marcado, sem m
 | `click_cta_scroll` | qualquer botão de CTA fora da tabela | `dobra` (header, 1, 3, 5, 6, 8) |
 | `click_escolher_plano` | botão de um plano na tabela | `plano`, `valor` |
 | `click_whatsapp` | botões do WhatsApp (abaixo dos planos e no FAQ) | — |
+| `play_depoimento` | clique em um depoimento em vídeo | `video` (id do YouTube) |
 | `purchase` | carregamento de `obrigado.html` | `plano`, `valor`, `moeda` |
 
 UTMs da URL da LP são repassados automaticamente para a URL do checkout.

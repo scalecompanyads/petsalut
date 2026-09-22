@@ -2308,43 +2308,105 @@
       color: var(--wine)
     }
 
-    /* Depoimentos (oculto até CONFIG.depoimentos) */
+    /* Depoimentos em vídeo */
     .testi {
       background: var(--mint-3)
     }
 
     .testi-grid {
       display: grid;
-      gap: 18px
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto
     }
 
-    @media(min-width:800px) {
+    @media(min-width:700px) {
       .testi-grid {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px
       }
     }
 
-    .testi-card {
+    .video-card {
       background: #fff;
-      border-radius: var(--r-md);
-      padding: 26px;
-      box-shadow: var(--shadow)
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(27, 43, 47, .08);
+      transition: transform .25s, box-shadow .25s
     }
 
-    .testi-card p {
-      font-size: 15px;
-      margin-bottom: 14px
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 44px rgba(11, 95, 90, .14)
     }
 
-    .testi-card b {
+    .video-play {
+      position: relative;
       display: block;
-      font-size: 14px;
-      color: var(--ink)
+      width: 100%;
+      aspect-ratio: 9/16;
+      padding: 0;
+      border: 0;
+      background: #0d1a1c;
+      cursor: pointer;
+      overflow: hidden
     }
 
-    .testi-card small {
-      color: var(--ink-3);
-      font-size: 13px
+    .video-play img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s
+    }
+
+    .video-card:hover .video-play img {
+      transform: scale(1.04)
+    }
+
+    .video-play .play {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .92);
+      color: var(--wine);
+      display: grid;
+      place-items: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+      transition: transform .25s, background .25s
+    }
+
+    .video-play .play .ic-svg {
+      font-size: 20px;
+      margin-left: 3px
+    }
+
+    .video-play:hover .play {
+      background: #fff;
+      transform: translate(-50%, -50%) scale(1.08)
+    }
+
+    .video-play iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0
+    }
+
+    .video-cap {
+      padding: 16px 18px 20px
+    }
+
+    .video-cap h3 {
+      font-size: 15px;
+      line-height: 1.35;
+      font-weight: 700;
+      color: var(--ink)
     }
 
     /* 7. FAQ */
@@ -2670,6 +2732,9 @@
     </symbol>
     <symbol id="i-solid-minus" viewBox="0 0 448 512">
       <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+    </symbol>
+    <symbol id="i-solid-play" viewBox="0 0 384 512">
+      <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/>
     </symbol>
     <symbol id="i-solid-paw" viewBox="0 0 512 512">
       <path
@@ -3351,14 +3416,56 @@
     </div>
   </section>
 
-  <!-- ===================== DEPOIMENTOS (oculto até CONFIG.depoimentos) ===================== -->
-  <section class="testi" data-needs="depoimentos">
+  <!-- ===================== DEPOIMENTOS EM VÍDEO ===================== -->
+  <section class="testi" id="depoimentos">
     <div class="container">
       <div class="section-head center">
-        <span class="eyebrow">Histórias reais de amor</span>
-        <h2>Veja quem <span class="hl-teal">confiou na Petsalut</span></h2>
+        <span class="eyebrow">Histórias reais de tutores</span>
+        <h2>Quem já usa, <span class="hl-teal">conta como foi.</span></h2>
+        <p class="lead">Depoimentos de tutores atendidos pela rede credenciada Petsalut.</p>
       </div>
-      <div class="testi-grid" id="testi-grid"></div>
+      <div class="testi-grid">
+        <article class="video-card">
+          <button class="video-play" type="button" data-video="M87mzWxaAxk"
+            aria-label="Assistir: Tutora de gatos e sua experiência com a Petsalut">
+            <img src="assets/depo-1.jpg" alt="" width="540" height="960" loading="lazy" decoding="async">
+            <span class="play"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-play" />
+              </svg></span>
+          </button>
+          <div class="video-cap">
+            <h3>Tutora de gatos e sua experiência com a Petsalut</h3>
+          </div>
+        </article>
+        <article class="video-card">
+          <button class="video-play" type="button" data-video="7teP3-IjMbQ"
+            aria-label="Assistir: Tutora e sua experiência com a Petsalut">
+            <img src="assets/depo-2.jpg" alt="" width="540" height="960" loading="lazy" decoding="async">
+            <span class="play"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-play" />
+              </svg></span>
+          </button>
+          <div class="video-cap">
+            <h3>Tutora e sua experiência com a Petsalut</h3>
+          </div>
+        </article>
+        <article class="video-card">
+          <button class="video-play" type="button" data-video="QYdeicITjgk"
+            aria-label="Assistir: Tutoras e sua experiência com o plano Petsalut">
+            <img src="assets/depo-3.jpg" alt="" width="540" height="960" loading="lazy" decoding="async">
+            <span class="play"><svg class="ic-svg" aria-hidden="true">
+                <use href="#i-solid-play" />
+              </svg></span>
+          </button>
+          <div class="video-cap">
+            <h3>Tutoras e sua experiência com o plano Petsalut</h3>
+          </div>
+        </article>
+      </div>
+      <div class="center" style="margin-top:36px"><a href="#planos" class="btn btn-wine btn-ic" data-cta
+          data-dobra="depoimentos">Escolher plano <span class="ic"><svg class="ic-svg" aria-hidden="true">
+              <use href="#i-solid-arrow-right" />
+            </svg></span></a></div>
     </div>
   </section>
 
@@ -3556,8 +3663,6 @@
         { label: 'Credenciados', value: '27 99842-3695', note: 'Clínicas e veterinários' }
       ],
       stat: { num: '', label: '' },   // ex.: { num: '+ de 15k', label: 'consultas realizadas' } — confirmar número real
-      depoimentos: [                  // ex.: { texto: '...', nome: 'Camila', pet: 'Thor', cidade: 'Vitória' } (PENDÊNCIA)
-      ],
       faq: {                          // Respostas pendentes; vazias = pergunta oculta
         multipets: '',
         pagamento: '',
@@ -3605,18 +3710,6 @@
         d.children[0].textContent = c.label; d.children[1].textContent = c.value; d.children[2].textContent = c.note || '';
         contacts.appendChild(d);
       });
-      if (CONFIG.depoimentos && CONFIG.depoimentos.length) {
-        var grid = document.getElementById('testi-grid');
-        CONFIG.depoimentos.forEach(function (t) {
-          var d = document.createElement('div'); d.className = 'testi-card';
-          d.innerHTML = '<p></p><b></b><small></small>';
-          d.children[0].textContent = '“' + t.texto + '”';
-          d.children[1].textContent = t.nome + (t.pet ? ' e ' + t.pet : '');
-          d.children[2].textContent = t.cidade || '';
-          grid.appendChild(d);
-        });
-        ready('[data-needs="depoimentos"]');
-      }
       Object.keys(CONFIG.faq).forEach(function (k) {
         if (CONFIG.faq[k]) { document.getElementById('faq-' + k).textContent = CONFIG.faq[k]; ready('[data-needs="faq_' + k + '"]'); }
       });
@@ -3642,7 +3735,23 @@
         btn.addEventListener('click', function () { btn.closest('.plan').classList.toggle('open'); });
       });
 
-      /* ---- Evento view_planos quando a tabela entra na tela ---- */
+      /* ---- Depoimentos em vídeo: carrega o player do YouTube só no clique ---- */
+  document.querySelectorAll('.video-play').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-video');
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+      f.title = btn.getAttribute('aria-label') || 'Depoimento Petsalut';
+      f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      btn.innerHTML = '';
+      btn.appendChild(f);
+      btn.style.cursor = 'default';
+      dl.push({ event: 'play_depoimento', video: id });
+    }, { once: true });
+  });
+
+  /* ---- Evento view_planos quando a tabela entra na tela ---- */
       var planos = document.getElementById('planos');
       var viewed = false;
       if ('IntersectionObserver' in window) {
