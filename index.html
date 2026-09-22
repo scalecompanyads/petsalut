@@ -321,7 +321,7 @@
 
     /* 1. Hero: imagem de fundo full-bleed, cantos inferiores arredondados, altura menor que a tela */
     .hero {
-      background: #CFE5D3 url("assets/hero-bg.jpg") center right/cover no-repeat;
+      background: #F0ECE9 url("assets/hero-bg.jpg") center top/cover no-repeat;
       padding: 36px 0 84px;
       overflow: hidden;
       border-radius: 0 0 28px 28px;
@@ -341,11 +341,24 @@
       }
     }
 
+    /* véu claro sobre a foto: garante leitura do texto em qualquer largura */
+    @media(min-width:900px) {
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, #F0ECE9 0%, #F0ECE9 34%, rgba(240, 236, 233, .92) 46%, rgba(240, 236, 233, .55) 58%, rgba(240, 236, 233, 0) 70%);
+        pointer-events: none
+      }
+    }
+
     .hero .container {
       display: grid;
       gap: 28px;
       align-items: center;
-      width: 100%
+      width: 100%;
+      position: relative;
+      z-index: 1
     }
 
     @media(min-width:900px) {
