@@ -341,17 +341,6 @@
       }
     }
 
-    /* véu claro sobre a foto: garante leitura do texto em qualquer largura */
-    @media(min-width:900px) {
-      .hero::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(90deg, #F0ECE9 0%, #F0ECE9 34%, rgba(240, 236, 233, .92) 46%, rgba(240, 236, 233, .55) 58%, rgba(240, 236, 233, 0) 70%);
-        pointer-events: none
-      }
-    }
-
     .hero .container {
       display: grid;
       gap: 28px;
@@ -2533,12 +2522,6 @@
       <div class="hero-pets" aria-hidden="true">
         <img class="hero-mobile-img" src="assets/hero-pets-2.jpg" alt="" width="447" height="359" fetchpriority="high"
           decoding="async">
-        <div class="tag-pill teal tp1"><i><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-heart" />
-            </svg></i>Felicidade</div>
-        <div class="tag-pill wine tp2"><i><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-heart" />
-            </svg></i>Cuidado</div>
       </div>
     </div>
   </section>
