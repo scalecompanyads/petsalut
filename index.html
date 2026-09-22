@@ -23,7 +23,7 @@
   <!-- End Google Tag Manager -->
 
   <link rel="preload" as="image" href="assets/hero-bg.jpg" media="(min-width: 900px)">
-  <link rel="preload" as="image" href="assets/hero-pets-2.jpg" media="(max-width: 899px)">
+  <link rel="preload" as="image" href="assets/hero-mobile.jpg" media="(max-width: 899px)">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap">
@@ -142,9 +142,7 @@
     .plans-grid>*,
     .steps>*,
     .problem-grid>*,
-    .why-grid>*,
-    footer .container>*,
-    .about>* {
+    footer .container>* {
       min-width: 0
     }
 
@@ -462,34 +460,31 @@
 
     @media(max-width:899px) {
       .hero {
-        background-image: none;
-        background: #B0DDD4;
-        padding-top: 0;
-        padding-bottom: 68px;
+        background: #F0ECE9 url("assets/hero-mobile.jpg") center top/100% auto no-repeat;
+        padding-top: min(60vw, 290px);
+        padding-bottom: 56px;
         min-height: 0;
         max-height: none
       }
 
+      /* véu que cobre a base da foto e deixa o texto legível por cima */
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(240, 236, 233, 0) 18%, rgba(240, 236, 233, .55) 30%, rgba(240, 236, 233, .95) 40%, #F0ECE9 48%);
+        pointer-events: none
+      }
+
       .hero .container {
-        gap: 8px;
+        gap: 0;
         padding: 0
       }
 
       .hero-pets {
-        order: -1;
-        width: min(58vw, 230px);
-        margin: 0 auto;
-        margin-top: -14px
+        display: none
       }
 
-      .hero-mobile-img {
-        width: 100%;
-        aspect-ratio: 1/1;
-        object-fit: contain;
-        object-position: center;
-        background: #B0DDD4;
-        border-radius: 0
-      }
 
       .hero-copy {
         text-align: center;
@@ -1912,142 +1907,6 @@
       }
     }
 
-    /* 6. Sobre + diferenciais + indicação */
-    .about {
-      display: grid;
-      gap: 32px;
-      align-items: center;
-      margin-bottom: 64px
-    }
-
-    @media(min-width:900px) {
-      .why {
-        padding-top: 96px !important
-      }
-    }
-
-    @media(min-width:900px) {
-      .about {
-        grid-template-columns: 1fr 1fr;
-        gap: 56px
-      }
-    }
-
-    .about h2 {
-      margin: 14px 0 14px
-    }
-
-    .about .stat {
-      display: inline-flex;
-      flex-direction: column;
-      background: var(--pink);
-      border-radius: var(--r-md);
-      padding: 16px 22px;
-      margin-top: 22px
-    }
-
-    .about .stat b {
-      font-size: 30px;
-      font-weight: 800;
-      color: var(--wine);
-      line-height: 1.1;
-      letter-spacing: -.02em
-    }
-
-    .about .stat span {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--ink-2)
-    }
-
-    .blob-photo {
-      position: relative;
-      padding: 24px
-    }
-
-    .blob-photo::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: var(--teal);
-      border-radius: 58% 42% 45% 55% / 50% 60% 40% 50%;
-      opacity: .85
-    }
-
-    .blob-photo::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 46%;
-      height: 46%;
-      background: var(--wine);
-      border-radius: 50% 50% 40% 60% / 60% 40% 60% 40%;
-      opacity: .9
-    }
-
-    .blob-photo img {
-      position: relative;
-      z-index: 1;
-      border-radius: 26px;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      width: 100%
-    }
-
-    .why-grid {
-      display: grid;
-      gap: 18px;
-      margin: 44px 0 64px
-    }
-
-    @media(min-width:800px) {
-      .why-grid {
-        grid-template-columns: repeat(3, 1fr)
-      }
-    }
-
-    .why-card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: var(--r-md);
-      padding: 26px;
-      box-shadow: var(--shadow)
-    }
-
-    .why-card .ico {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 16px
-    }
-
-    .why-card .ico .ic-svg {
-      font-size: 20px
-    }
-
-    .why-card .ico.t {
-      background: var(--mint);
-      color: var(--teal)
-    }
-
-    .why-card .ico.w {
-      background: var(--pink);
-      color: var(--wine)
-    }
-
-    .why-card h3 {
-      margin-bottom: 6px
-    }
-
-    .why-card p {
-      font-size: 15px
-    }
-
     .ref-sec {
       padding: 16px 12px 0;
       background: #fff;
@@ -2325,6 +2184,57 @@
       .testi-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 24px
+      }
+    }
+
+    /* mobile: carrossel com scroll-snap */
+    @media(max-width:699px) {
+      .testi-grid {
+        display: flex;
+        gap: 14px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 4px 20px 10px;
+        margin-inline: -20px;
+        max-width: none
+      }
+
+      .testi-grid::-webkit-scrollbar {
+        display: none
+      }
+
+      .testi-grid .video-card {
+        flex: 0 0 74%;
+        scroll-snap-align: center
+      }
+
+      .testi-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 16px
+      }
+
+      .testi-dots span {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--line);
+        transition: background .25s, width .25s
+      }
+
+      .testi-dots span.on {
+        width: 20px;
+        border-radius: 999px;
+        background: var(--wine)
+      }
+    }
+
+    @media(min-width:700px) {
+      .testi-dots {
+        display: none
       }
     }
 
@@ -2776,7 +2686,7 @@
         </div>
       </div>
       <div class="hero-pets" aria-hidden="true">
-        <img class="hero-mobile-img" src="assets/hero-pets-2.jpg" alt="" width="447" height="359" fetchpriority="high"
+        <img class="hero-mobile-img" src="assets/hero-mobile.jpg" alt="" width="720" height="720" fetchpriority="high"
           decoding="async">
       </div>
     </div>
@@ -2901,6 +2811,7 @@
           </button>
         </article>
       </div>
+      <div class="testi-dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
     </div>
   </section>
 
@@ -3354,57 +3265,6 @@
     </div>
   </section>
 
-  <!-- ===================== 6. SOBRE + DIFERENCIAIS + INDICAÇÃO ===================== -->
-  <section class="why" style="padding-top:72px">
-    <div class="container">
-      <div class="about">
-        <div>
-          <span class="eyebrow teal">Sobre a Petsalut</span>
-          <h2>Mais que um plano, <span class="hl-teal">uma família apaixonada.</span></h2>
-          <p class="lead">Desde 2017, a Petsalut promove bem-estar com acesso à medicina veterinária de ponta. Nosso
-            propósito é a prevenção com previsibilidade financeira, possibilitando prolongar a vida dos pets sem
-            surpresas no orçamento familiar.</p>
-          <div class="stat" data-needs="stat"><b id="stat-num"></b><span id="stat-label"></span></div>
-        </div>
-        <div class="blob-photo">
-          <img src="assets/tutor.jpg" alt="Tutor abraçando seu cachorro" width="1000" height="667" loading="lazy"
-            decoding="async">
-        </div>
-      </div>
-
-      <div class="section-head center">
-        <span class="eyebrow">Por que a Petsalut</span>
-        <h2>Por que a Petsalut <span class="hl-wine">é diferente?</span></h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="ico t"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-shield-heart" />
-            </svg></div>
-          <h3>Sem coparticipação</h3>
-          <p>Nos planos nacionais, você paga a mensalidade e ainda paga uma parte de cada atendimento. Na Petsalut, o
-            valor pago é a mensalidade.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico w"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-location-dot" />
-            </svg></div>
-          <h3>Rede regional no ES</h3>
-          <p>Credenciados em cidades do Espírito Santo, escolhidos pra quem mora aqui. Sem depender de uma rede nacional
-            distante.</p>
-        </div>
-        <div class="why-card">
-          <div class="ico t"><svg class="ic-svg" aria-hidden="true">
-              <use href="#i-solid-calendar-check" />
-            </svg></div>
-          <h3>9 anos de mercado</h3>
-          <p>Empresa capixaba, com sede em Vitória, atendendo tutores do Espírito Santo desde 2017.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- ===================== 6b. INDICAÇÃO ===================== -->
   <section class="ref-sec">
     <div class="referral" id="indicacao">
@@ -3713,7 +3573,23 @@
         btn.addEventListener('click', function () { btn.closest('.plan').classList.toggle('open'); });
       });
 
-      /* ---- Depoimentos em vídeo: carrega o player do YouTube só no clique ---- */
+      /* ---- Carrossel de depoimentos no mobile: marca o slide ativo ---- */
+  (function () {
+    var track = document.querySelector('.testi-grid');
+    var dots = document.querySelectorAll('.testi-dots span');
+    if (!track || !dots.length) return;
+    var cards = track.querySelectorAll('.video-card');
+    track.addEventListener('scroll', function () {
+      var mid = track.scrollLeft + track.clientWidth / 2, best = 0, bd = Infinity;
+      cards.forEach(function (c, i) {
+        var d = Math.abs(c.offsetLeft + c.offsetWidth / 2 - mid);
+        if (d < bd) { bd = d; best = i; }
+      });
+      dots.forEach(function (s, i) { s.classList.toggle('on', i === best); });
+    }, { passive: true });
+  })();
+
+  /* ---- Depoimentos em vídeo: carrega o player do YouTube só no clique ---- */
   document.querySelectorAll('.video-play').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var id = btn.getAttribute('data-video');
