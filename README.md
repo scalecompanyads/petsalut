@@ -24,7 +24,7 @@ Tudo fica no bloco `CONFIG` no fim de cada arquivo. Campo vazio = elemento fica 
 | `faq.multipets` / `pagamento` / `poscompra` / `elegibilidade` | Respostas das 4 perguntas pendentes do FAQ. |
 | `stat` | Número de destaque na seção "Sobre" (ex.: `+ de 15k` consultas realizadas, como no site). Vazio = oculto. |
 | `depoimentos` | Lista de `{ texto, nome, pet, cidade }`. Vazia = seção de depoimentos oculta. |
-| `whatsapp` | `5527998024119` (27 99802-4119), confirmado. `endereco` e `contatos` vieram do site petsalut.com. |
+| `whatsapp` | Não há mais botão de WhatsApp na página; o número (`5527998024119`) segue apenas nos contatos do rodapé. `endereco` e `contatos` vieram do site petsalut.com. |
 
 ### `obrigado.html`
 
@@ -78,7 +78,6 @@ Com isso os links da LP já passam a abrir o checkout com o plano marcado, sem m
 | `view_planos` | tabela de planos entra na tela | — |
 | `click_cta_scroll` | qualquer botão de CTA fora da tabela | `dobra` (header, 1, 3, 5, 6, 8) |
 | `click_escolher_plano` | botão de um plano na tabela | `plano`, `valor` |
-| `click_whatsapp` | botões do WhatsApp (abaixo dos planos e no FAQ) | — |
 | `play_depoimento` | clique em um depoimento em vídeo | `video` (id do YouTube) |
 | `purchase` | carregamento de `obrigado.html` | `plano`, `valor`, `moeda` |
 
