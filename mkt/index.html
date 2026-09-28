@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P7M2697P');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Petsalut — Plano de Saúde Pet no ES</title>
+<link rel="icon" href="assets/logo.png" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* ID visual — tokens de marca */
+  --brand-primary:#009D96;
+  --brand-accent:#A51437;
+  --brand-heading:#1A1A2E;
+
+  --bg:#FBFEFD;
+  --teal:var(--brand-primary);
+  --teal-dk:#007a74;
+  --teal-lt:#e0f5f4;
+  --accent:var(--brand-accent);
+  --accent-dk:#8a1030;
+  --ink:var(--brand-heading);
+  --title:var(--brand-heading);
+  --ink2:#0d2321;
+  --muted:#4a6e6c;
+  --line:#d5e8e7;
+  --white:#fff;
+  --font-sans:'Sora',system-ui,-apple-system,Segoe UI,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5%;height:68px;
+  background:rgba(251,254,253,.88);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .3s,height .3s;
+}
+nav.up{height:62px;box-shadow:0 2px 24px rgba(7,21,20,.07)}
+.nav-logo a{display:block;line-height:0;text-decoration:none}
+.nav-logo img{height:36px;width:auto;display:block}
+.nav-menu{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-menu a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-menu a:hover{color:var(--teal)}
+.nav-btn{
+  background:var(--accent);color:var(--white)!important;
+  padding:10px 22px!important;border-radius:100px;
+  font-weight:700!important;font-size:14px!important;
+  transition:background .2s,transform .15s!important;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+}
+.nav-btn:hover{background:var(--accent-dk)!important;transform:translateY(-1px)}
+.nav-btn .ico-wa{width:18px;height:18px;flex-shrink:0;display:none}
+.nav-btn .label-short{display:none}
+
+/* ── HERO ── */
+#hero{
+  --nav-h:68px;
+  min-height:min(90vh,920px);
+  height:auto;
+  display:flex;align-items:flex-start;
+  padding:calc(var(--nav-h) + 28px) 5% 48px;
+  background:url('assets/hero-bg.jpg') right center / contain no-repeat;
+  background-color:#F4F4F4;
+  overflow-x:hidden;
+  overflow-y:visible;
+}
+.hero-wrap{max-width:1220px;margin:0 auto;width:100%}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1.5px solid var(--line);background:var(--white);
+  color:var(--muted);font-size:11.5px;font-weight:600;
+  text-transform:uppercase;letter-spacing:1.5px;
+  padding:7px 16px;border-radius:100px;margin-bottom:26px;
+}
+.hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--teal);flex-shrink:0}
+h1{
+  font-size:clamp(40px,6vw,50px);font-weight:800;
+  line-height:1.03;letter-spacing:-2.5px;
+  color:var(--title);margin-bottom:22px;
+}
+h1 em{font-style:normal;color:var(--brand-primary)}
+.hero-sub{font-size:17px;color:var(--muted);max-width:480px;line-height:1.65;margin-bottom:30px}
+.bullets{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:38px}
+.bullets li{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:500}
+.bullets li::before{
+  content:'';width:20px;height:20px;flex-shrink:0;
+  background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E") center/cover;
+  border-radius:50%;
+}
+.btn-teal{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--teal);color:var(--white);text-decoration:none;
+  padding:16px 30px;border-radius:100px;
+  font-weight:700;font-size:15px;letter-spacing:-.1px;
+  box-shadow:0 6px 28px rgba(0,157,150,.32);
+  transition:background .2s,transform .15s,box-shadow .2s;
+}
+.btn-teal:hover{background:var(--teal-dk);transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,157,150,.42)}
+.hero-stats{display:flex;gap:36px;padding-top:32px;margin-top:36px}
+.h-stat strong{display:block;font-size:30px;font-weight:800;color:var(--teal);letter-spacing:-1px}
+.h-stat p{font-size:13px;color:var(--muted);margin-top:2px}
+
+
+/* ── MARQUEE ── */
+.mq-wrap{background:var(--teal);overflow:hidden;padding:15px 0}
+.mq-track{
+  display:flex;white-space:nowrap;
+  animation:mq 22s linear infinite;
+}
+.mq-track span{
+  color:rgba(255,255,255,.9);font-size:13.5px;font-weight:600;
+  text-transform:uppercase;letter-spacing:1.5px;padding:0 28px;
+}
+.mq-track span em{font-style:normal;color:rgba(255,255,255,.4)}
+@keyframes mq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── SECTIONS BASE ── */
+.s{padding:120px 5%}
+.s .inner{max-width:1220px;margin:0 auto}
+.eyebrow{
+  display:inline-block;background:var(--teal-lt);color:var(--teal);
+  font-size:11.5px;font-weight:700;text-transform:uppercase;
+  letter-spacing:1.5px;padding:5px 13px;border-radius:100px;margin-bottom:18px;
+}
+.eyebrow.dim{background:rgba(0,157,150,.18);color:var(--teal)}
+h2.sh{
+  font-size:clamp(32px,4vw,52px);font-weight:800;
+  line-height:1.08;letter-spacing:-1.8px;margin-bottom:18px;
+  color:var(--title);
+}
+h2.sh em{font-style:normal;color:var(--brand-primary)}
+.sp{font-size:17px;color:var(--muted);line-height:1.7}
+
+/* ── PAIN (dark) ── */
+#pain{background:#FFEAEF;padding:0 5%;text-align:center;height:800px;display:flex;align-items:center;justify-content:center}
+#pain .inner{max-width:740px;margin:0 auto}
+#pain .eyebrow{background:rgba(165,20,55,.12);color:var(--accent);margin-bottom:32px}
+#pain h2.sh{color:var(--ink);margin-bottom:24px;font-size:clamp(34px,4.5vw,56px)}
+#pain .sp{color:#000;font-size:18px}
+
+/* ── SOLUTION ── */
+#solution .sol-grid{
+  max-width:1220px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.sol-vis{position:relative}
+.sol-vis img.si{width:100%;border-radius:26px;display:block;aspect-ratio:3/4;object-fit:cover}
+.sol-badge{
+  position:absolute;bottom:24px;right:-22px;
+  background:var(--white);border-radius:16px;
+  padding:16px 20px;box-shadow:0 10px 36px rgba(7,21,20,.11);
+  min-width:195px;
+}
+.sol-badge .tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--teal);margin-bottom:6px}
+.sol-badge strong{font-size:19px;font-weight:800;color:var(--ink);display:block;letter-spacing:-.4px}
+.sol-badge span{font-size:12.5px;color:var(--muted)}
+
+/* ── INCLUDES (dark) ── */
+#includes{background:#C7E7E8;padding:120px 5%}
+#includes .inner{max-width:1220px;margin:0 auto}
+#includes h2.sh{color:var(--ink)}
+#includes .sp{color:#000;margin-bottom:56px}
+#includes .feat-card p{color:#000}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;padding:30px;
+  display:flex;flex-direction:column;gap:14px;
+  transition:background .25s,border-color .25s,box-shadow .25s;cursor:default;
+}
+.feat-card:hover{background:#fff;border-color:var(--teal);box-shadow:0 8px 32px rgba(0,157,150,.12)}
+.feat-ico{
+  width:50px;height:50px;border-radius:13px;
+  background:rgba(0,157,150,.12);
+  display:flex;align-items:center;justify-content:center;font-size:22px;
+}
+.feat-card h3{font-size:16.5px;font-weight:700;color:var(--title)}
+.feat-card p{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* ── DIFFERENTIALS ── */
+#diff .inner{max-width:1220px;margin:0 auto}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:52px}
+.diff-card{
+  border:1.5px solid var(--line);border-radius:22px;padding:38px;
+  display:flex;gap:22px;align-items:flex-start;
+  transition:border-color .2s,box-shadow .2s,transform .2s;
+}
+.diff-card:hover{border-color:var(--teal);box-shadow:0 8px 40px rgba(0,157,150,.1);transform:translateY(-3px)}
+.diff-num{font-size:46px;font-weight:800;line-height:1;letter-spacing:-2px;color:var(--teal-lt);flex-shrink:0;transition:color .2s}
+.diff-card:hover .diff-num{color:var(--teal)}
+.diff-card h3{font-size:19px;font-weight:700;margin-bottom:9px;letter-spacing:-.3px;color:var(--title)}
+.diff-card p{font-size:15px;color:var(--muted);line-height:1.65}
+
+/* ── PROOF (dark) ── */
+#proof{background:#FFEAEF;padding:120px 5%}
+#proof .inner{max-width:1220px;margin:0 auto}
+#proof h2.sh{color:var(--ink)}
+.pstats{display:flex;gap:80px;margin:56px 0;flex-wrap:wrap}
+.pstat strong{
+  font-size:clamp(54px,7vw,88px);font-weight:800;
+  color:var(--ink);letter-spacing:-4px;line-height:1;display:block;
+}
+.pstat strong em{font-style:normal;color:var(--brand-primary)}
+.pstat p{font-size:16px;color:var(--muted);margin-top:8px}
+.pdiv{height:1px;background:var(--line);margin-bottom:48px}
+.plabel{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:22px}
+.prow{display:flex;gap:10px;flex-wrap:wrap}
+.ppill{
+  display:flex;align-items:center;
+  background:var(--white);border:1px solid var(--line);
+  border-radius:100px;padding:10px 20px;
+  transition:background .2s,border-color .2s;
+}
+.ppill:hover{background:var(--teal-lt);border-color:var(--teal)}
+.ppill img{height:26px;filter:none;opacity:.8;display:block}
+
+/* ── FAQ ── */
+#faq .inner{max-width:800px;margin:0 auto}
+.faq-list{margin-top:48px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-btn{
+  width:100%;background:none;border:none;
+  padding:22px 0;text-align:left;font-family:inherit;
+  font-size:17px;font-weight:600;color:var(--ink);letter-spacing:-.2px;
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  transition:color .2s;
+}
+.faq-btn:hover{color:var(--teal)}
+.faq-btn .ico{
+  width:30px;height:30px;flex-shrink:0;border-radius:50%;
+  border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;
+  font-size:18px;color:var(--muted);
+  transition:transform .3s,background .2s,border-color .2s,color .2s;
+}
+.faq-item.open .faq-btn .ico{transform:rotate(45deg);background:var(--teal);border-color:var(--teal);color:var(--white)}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-body p{font-size:16px;color:var(--muted);line-height:1.7;padding-bottom:22px}
+.faq-item.open .faq-body{max-height:140px}
+
+/* ── CTA FINAL ── */
+#cta{background:var(--teal);padding:140px 5%;text-align:center;position:relative;overflow:hidden}
+#cta::before{content:'';position:absolute;top:-120px;left:-120px;width:420px;height:420px;background:rgba(255,255,255,.05);border-radius:50%}
+#cta::after{content:'';position:absolute;bottom:-90px;right:-90px;width:320px;height:320px;background:rgba(255,255,255,.05);border-radius:50%}
+#cta .inner{max-width:660px;margin:0 auto;position:relative;z-index:1}
+#cta h2{font-size:clamp(36px,5.5vw,68px);font-weight:800;color:var(--white);letter-spacing:-2.5px;line-height:1.06;margin-bottom:18px}
+#cta p{font-size:18px;color:rgba(255,255,255,.68);line-height:1.7;margin-bottom:44px}
+.btn-white{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--white);color:var(--teal);text-decoration:none;
+  padding:18px 38px;border-radius:100px;font-weight:800;font-size:16px;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);letter-spacing:-.2px;
+  transition:transform .15s,box-shadow .2s;
+}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 52px rgba(0,0,0,.24)}
+
+/* ── FOOTER ── */
+footer{background:#FFEAEF;padding:64px 5% 44px}
+.foot-inner{max-width:1220px;margin:0 auto}
+.foot-top{display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--line)}
+.foot-brand img{height:34px;width:auto;display:block;margin-bottom:14px;mix-blend-mode:normal;opacity:1}
+.foot-brand p{font-size:14px;color:var(--muted);line-height:1.65;max-width:240px}
+.foot-col h4{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:18px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.foot-col ul a{color:var(--ink);text-decoration:none;font-size:14px;transition:color .2s}
+.foot-col ul a:hover{color:var(--teal)}
+.foot-bottom{max-width:1220px;margin:32px auto 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.foot-bottom p{font-size:13px;color:var(--muted)}
+
+/* ── WA FLOAT ── */
+.wa{
+  position:fixed;bottom:28px;right:28px;z-index:200;
+  width:56px;height:56px;border-radius:50%;background:#25D366;
+  display:flex;align-items:center;justify-content:center;text-decoration:none;
+  box-shadow:0 6px 28px rgba(37,211,102,.5);transition:transform .2s;
+}
+.wa:hover{transform:scale(1.1)}
+.wa svg{width:28px;height:28px}
+
+/* ── PARCEIROS ESPECIAIS ── */
+#parceiros{padding:120px 5%}
+#parceiros .inner{max-width:1220px;margin:0 auto}
+#parceiros .pc-head{text-align:center;max-width:600px;margin:0 auto 60px}
+.pc-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;
+}
+.pc-card{
+  background:var(--white);border:1.5px solid var(--line);
+  border-radius:20px;padding:32px 28px;
+  display:flex;flex-direction:column;align-items:flex-start;gap:16px;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.pc-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,157,150,.1);border-color:rgba(0,157,150,.35)}
+.pc-logo{height:80px;width:auto;max-width:200px;object-fit:contain;display:block}
+.pc-name{font-size:15px;font-weight:700;color:var(--title);letter-spacing:-.3px;line-height:1.2}
+.pc-desc{font-size:13.5px;color:var(--muted);line-height:1.6;flex:1}
+.pc-tags{display:flex;flex-wrap:wrap;gap:6px}
+.pc-tag{
+  font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;
+  color:var(--teal);background:var(--teal-lt);
+  padding:3px 10px;border-radius:100px;
+}
+.pc-ig{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;
+  transition:color .2s;margin-top:auto;
+}
+.pc-ig:hover{color:var(--teal)}
+.pc-ig svg{width:14px;height:14px;flex-shrink:0}
+
+/* ── GRAIN TEXTURE ── */
+.grain{position:relative}
+.grain::after{
+  content:'';position:absolute;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  background-repeat:repeat;background-size:200px 200px;
+}
+.grain > *{position:relative;z-index:2}
+
+/* ── VIDEO TESTIMONIALS (carousel vt-*) ── */
+#testimonials{background:#C7E7E8;padding:100px 0;overflow:hidden}
+#testimonials .inner{max-width:1220px;margin:0 auto;padding:0 5%}
+.vt-head{text-align:center;max-width:580px;margin:0 auto 48px}
+.vt-head h2.sh{color:var(--ink)}
+.vt-head .sp{margin-top:10px;color:#000}
+.vt-stage{
+  display:flex;align-items:center;gap:10px;max-width:1100px;margin:0 auto;
+}
+.vt-arrow{
+  flex-shrink:0;width:44px;height:44px;border-radius:50%;
+  border:1.5px solid rgba(26,26,46,.15);background:rgba(255,255,255,.7);
+  color:var(--ink);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:background .2s,border-color .2s,color .2s;
+}
+.vt-arrow:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+.vt-overflow{flex:1;min-width:0;overflow:hidden;cursor:grab;touch-action:pan-y}
+.vt-overflow:active{cursor:grabbing}
+.vt-track{
+  display:flex;align-items:stretch;gap:16px;
+  will-change:transform;
+}
+.vt-card{
+  flex-shrink:0;width:240px;max-width:min(240px,calc((100vw - 120px) / 2.05));
+  aspect-ratio:9/16;border-radius:20px;overflow:hidden;
+  position:relative;cursor:pointer;background:#000;
+  transform:scale(.92);opacity:.55;
+  transition:transform .5s cubic-bezier(.4,0,.2,1),opacity .4s ease,box-shadow .4s;
+  box-shadow:0 6px 28px rgba(0,0,0,.4);
+}
+.vt-card.active{
+  transform:scale(1);opacity:1;z-index:2;
+  box-shadow:0 22px 70px rgba(0,0,0,.55);
+}
+.vt-card video{
+  width:100%;height:100%;display:block;object-fit:cover;
+}
+.vt-overlay{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top,rgba(0,0,0,.68) 0%,transparent 50%);
+  display:flex;align-items:center;justify-content:center;
+}
+.vt-play-btn{
+  width:52px;height:52px;border-radius:50%;
+  background:linear-gradient(135deg,var(--teal) 0%,#13D3B3 100%);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(0,157,150,.45);
+}
+.vt-play-btn svg{width:22px;height:22px;fill:#fff;margin-left:4px}
+.vt-expand-hint{
+  position:absolute;bottom:12px;left:50%;transform:translateX(-50%);
+  display:flex;align-items:center;gap:5px;
+  color:rgba(255,255,255,.88);font-size:11px;font-weight:600;
+  white-space:nowrap;text-shadow:0 1px 10px rgba(0,0,0,.85);
+}
+.vt-expand-hint svg{width:13px;height:13px;opacity:.9;flex-shrink:0}
+.vt-dots{display:flex;justify-content:center;gap:8px;margin-top:28px;flex-wrap:wrap}
+.vt-dot{
+  width:8px;height:8px;border-radius:50%;padding:0;border:none;
+  background:rgba(26,26,46,.2);cursor:pointer;transition:background .2s,transform .2s;
+}
+.vt-dot:hover{background:rgba(26,26,46,.35)}
+.vt-dot.active{background:var(--teal);transform:scale(1.2)}
+.vt-swipe-hint{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  margin-top:14px;color:rgba(26,26,46,.45);font-size:12px;font-weight:500;
+}
+.vt-swipe-hint svg{width:15px;height:15px;opacity:.5;filter:invert(1) brightness(0)}
+
+@media(max-width:700px){
+  #testimonials{padding:72px 0}
+  .vt-stage{gap:6px;padding:0 2px}
+  .vt-arrow{width:36px;height:36px}
+  .vt-card{width:200px;max-width:min(200px,42vw)}
+  .vt-expand-hint{font-size:10px;max-width:90%;white-space:normal;text-align:center;line-height:1.25}
+}
+
+@media(max-width:640px){
+  .vmodal-inner{width:92vw;max-width:360px}
+}
+
+/* ── VIDEO MODAL ── */
+.vmodal{
+  position:fixed;inset:0;z-index:999;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(0,0,0,.85);backdrop-filter:blur(12px);
+  opacity:0;pointer-events:none;
+  transition:opacity .35s ease;
+}
+.vmodal.open{opacity:1;pointer-events:all}
+.vmodal-inner{
+  position:relative;
+  width:min(380px,88vw);
+  aspect-ratio:9/16;
+  border-radius:24px;overflow:hidden;
+  transform:scale(.08);
+  transition:transform .42s cubic-bezier(.22,1,.36,1);
+  box-shadow:0 40px 120px rgba(0,0,0,.8);
+}
+.vmodal.open .vmodal-inner{transform:scale(1)}
+.vmodal video{width:100%;height:100%;object-fit:cover;display:block;background:#000}
+.vmodal-close{
+  position:absolute;top:14px;right:14px;
+  width:38px;height:38px;border-radius:50%;
+  background:rgba(0,0,0,.55);backdrop-filter:blur(8px);
+  border:1.5px solid rgba(255,255,255,.25);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:20px;line-height:1;
+  transition:background .2s,transform .15s;
+  z-index:10;
+}
+.vmodal-close:hover{background:rgba(0,0,0,.8);transform:scale(1.1)}
+/* mute toggle button */
+.vmodal-mute{
+  position:absolute;bottom:18px;right:14px;
+  width:38px;height:38px;border-radius:50%;
+  background:rgba(0,0,0,.55);backdrop-filter:blur(8px);
+  border:1.5px solid rgba(255,255,255,.25);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:background .2s;z-index:10;
+}
+.vmodal-mute:hover{background:rgba(0,0,0,.8)}
+.vmodal-mute svg{width:18px;height:18px;fill:white}
+
+/* ── REVEAL ── */
+.r{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.r.on{opacity:1;transform:translateY(0)}
+.r.d1{transition-delay:.08s}.r.d2{transition-delay:.18s}.r.d3{transition-delay:.28s}
+.r.d4{transition-delay:.38s}.r.d5{transition-delay:.48s}.r.d6{transition-delay:.58s}
+
+/* hero items reveal on load */
+.hl{opacity:0;transform:translateY(22px);animation:hl .65s ease forwards}
+.hl.a1{animation-delay:.1s}.hl.a2{animation-delay:.22s}.hl.a3{animation-delay:.34s}
+.hl.a4{animation-delay:.46s}.hl.a5{animation-delay:.6s}.hl.a6{animation-delay:.74s}
+@keyframes hl{to{opacity:1;transform:translateY(0)}}
+
+/* floating badge pulse */
+@keyframes fbFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+@keyframes imgIn{from{opacity:0;transform:scale(.96) translateY(14px)}to{opacity:1;transform:scale(1) translateY(0)}}
+
+/* marquee pause on hover */
+.mq-wrap:hover .mq-track{animation-play-state:paused}
+
+/* smooth active nav underline */
+.nav-menu a{position:relative}
+.nav-menu a:not(.nav-btn)::after{
+  content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;
+  background:var(--teal);border-radius:2px;transition:width .25s;
+}
+.nav-menu a:not(.nav-btn):hover::after{width:100%}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1080px){
+  /* hero: texto sempre abaixo do header; bloco cresce com o conteúdo */
+  .hero-wrap{max-width:660px}
+  #hero{
+    min-height:auto;
+    background-position:right top;
+    background-size:cover;
+    padding:calc(var(--nav-h) + 24px) 5% 40px;
+    align-items:flex-start;
+  }
+  .hero-stats{gap:24px}
+
+  /* solution: coluna única, visual acima do texto */
+  #solution .sol-grid{grid-template-columns:1fr;max-width:660px}
+  .sol-vis{width:100%;max-width:480px;margin:0 auto}
+  /* badge dentro do container sem vazar */
+  .sol-badge{right:12px;bottom:16px;min-width:160px}
+  .sol-badge strong{font-size:15px}
+
+  .feat-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+  /* tablet médio: diff grid já em 2 colunas, padding reduzido */
+  .diff-card{padding:26px}
+  .diff-num{font-size:36px}
+  .pstats{gap:48px}
+  #hero{
+    padding-bottom:36px;
+  }
+  #hero h1{font-size:clamp(34px,5.5vw,46px);margin-bottom:18px}
+  .hero-sub{margin-bottom:22px}
+  .bullets{margin-bottom:28px}
+  .hero-stats{margin-top:28px;padding-top:24px}
+}
+
+/* laptops / janelas baixas: hero não força altura mínima grande */
+@media(max-width:1200px) and (max-height:800px){
+  #hero{
+    min-height:0;
+    padding:calc(var(--nav-h) + 16px) 5% 28px;
+  }
+  #hero h1{font-size:clamp(30px,4.2vw,42px);margin-bottom:14px;letter-spacing:-1.5px}
+  .hero-sub{font-size:16px;margin-bottom:16px}
+  .bullets{margin-bottom:20px;gap:8px}
+  .hero-stats{margin-top:20px;padding-top:16px}
+  .btn-teal{padding:14px 24px;font-size:14px}
+}
+@media(max-width:700px){
+  .s{padding:80px 5%}
+  #pain,#includes,#proof,#cta{padding:80px 5%}
+  /* reset altura fixa no mobile */
+  #pain{height:auto;min-height:640px}
+  nav{padding:0 4%;height:60px;gap:10px}
+  nav.up{height:56px}
+  #hero{--nav-h:60px}
+  .nav-logo{flex-shrink:0}
+  .nav-logo img{height:26px}
+  .nav-menu{gap:0;margin-left:auto}
+  .nav-menu li:not(:last-child){display:none}
+  .nav-btn{padding:9px 14px!important;font-size:12.5px!important;gap:6px;max-width:100%}
+  .nav-btn .ico-wa{display:block}
+  .nav-btn .label-long{display:none}
+  .nav-btn .label-short{display:inline}
+  .bullets{grid-template-columns:1fr}
+  .diff-grid{grid-template-columns:1fr}
+  .feat-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr;gap:28px}
+  .foot-bottom{justify-content:center;text-align:center}
+  .pstats{gap:36px}
+  h1{letter-spacing:-1.8px}
+
+  /* hero mobile: altura mínima + fluxo que não sobrepõe marquee */
+  #hero{
+    min-height:700px;
+    height:auto;
+    overflow-x:hidden;
+    overflow-y:visible;
+    background-image:url('assets/hero-bg-mobile.jpg');
+    background-size:cover;
+    background-position:top center;
+    align-items:flex-start;
+    padding:calc(var(--nav-h) + 20px) 5% 44px;
+  }
+  #hero h1{margin-top:350px}
+  .hero-sub{font-size:16px;line-height:1.55}
+  .hero-stats{
+    gap:18px;
+    margin-top:24px;
+    padding-top:20px;
+    flex-wrap:wrap;
+  }
+
+  /* solution: gap menor entre imagem e texto */
+  #solution .sol-grid{gap:32px}
+
+  /* solution visual full-width no mobile */
+  .sol-vis{max-width:100%}
+  .sol-vis img.si{aspect-ratio:4/3;border-radius:18px}
+  .sol-badge{right:12px;bottom:12px;padding:12px 15px;min-width:0}
+  .sol-badge strong{font-size:14px}
+  .sol-badge span{font-size:12px}
+}
+
+@media (max-width:1000px) { 
+  .sol-vis img.si{aspect-ratio:1/1;border-radius:18px}
+} 
+
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7M2697P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- WA FLOAT -->
+<a class="wa" href="https://wa.me/5527998024119?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20planos%20da%20Petsalut" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.927l6.234-1.637A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.667-.523-5.176-1.432l-.371-.22-3.7.972 1.005-3.59-.242-.389A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">
+    <a href="#hero" aria-label="Petsalut — início"><img src="assets/logo.png" alt="Petsalut"/></a>
+  </div>
+  <ul class="nav-menu">
+    <li><a href="#solution">Sobre</a></li>
+    <li><a href="#includes">Planos</a></li>
+    <li><a href="#diff">Diferenciais</a></li>
+    <li><a href="#testimonials">Depoimentos</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="https://wa.me/5527998024119?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20planos%20da%20Petsalut" target="_blank" class="nav-btn" aria-label="Falar com a Petsalut no WhatsApp"><svg class="ico-wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.927l6.234-1.637A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.667-.523-5.176-1.432l-.371-.22-3.7.972 1.005-3.59-.242-.389A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg><span class="label-long">Falar no WhatsApp</span><span class="label-short">WhatsApp</span></a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-wrap">
+    <div>
+     
+      <h1 class="hl a2">Cuide da saúde<br/>do seu pet<br/><em>sem surpresas</em><br/>no orçamento</h1>
+      <p class="hero-sub hl a3">Com a Petsalut, você paga um valor fixo por mês e tem acesso a consultas, exames e atendimento quando precisar — sem cobranças inesperadas.</p>
+      <ul class="bullets hl a4">
+        <li>Consultas e exames incluídos</li>
+        <li>Urgência e emergência 24h</li>
+        <li>Sem coparticipação</li>
+        <li>Rede em todo o Espírito Santo</li>
+      </ul>
+      <div class="hl a5">
+        <a class="btn-teal" href="https://wa.me/5527998024119?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20planos%20da%20Petsalut" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.927l6.234-1.637A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.667-.523-5.176-1.432l-.371-.22-3.7.972 1.005-3.59-.242-.389A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Fale com um especialista
+        </a>
+      </div>
+      <div class="hero-stats hl a6">
+        <div class="h-stat"><strong>+50 mil</strong><p>consultas realizadas</p></div>
+        <div class="h-stat"><strong>+10 anos</strong><p>cuidando de pets no ES</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq-wrap">
+  <div class="mq-track">
+    <span>SEM COPARTICIPAÇÃO <em>·</em></span><span>REDE CREDENCIADA NO ES <em>·</em></span><span>EMERGÊNCIA 24H <em>·</em></span><span>+50.000 CONSULTAS <em>·</em></span><span>DESDE 2016 <em>·</em></span><span>MENSALIDADE FIXA <em>·</em></span><span>CUIDADO PREVENTIVO <em>·</em></span><span>SEM COPARTICIPAÇÃO <em>·</em></span><span>REDE CREDENCIADA NO ES <em>·</em></span><span>EMERGÊNCIA 24H <em>·</em></span><span>+50.000 CONSULTAS <em>·</em></span><span>DESDE 2017 <em>·</em></span><span>MENSALIDADE FIXA <em>·</em></span><span>CUIDADO PREVENTIVO <em>·</em></span>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section id="pain" class="grain">
+  <div class="inner">
+    <span class="eyebrow r d1">A realidade</span>
+    <h2 class="sh r d2">Nem sempre o problema<br/>é só a saúde.<br/>É também o custo <em>inesperado</em>.</h2>
+    <p class="sp r d3">Uma consulta, um exame, um atendimento de urgência —<br/>e o valor final pode sair completamente do controle.</p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution" class="s">
+  <div class="sol-grid">
+    <div class="sol-vis r">
+      <img class="si" src="Logos/SKG99Z.png" alt="Veterinário com pet"/>
+      <div class="sol-badge">
+        <div class="tag">Mensalidade fixa</div>
+        <strong>Previsibilidade</strong>
+        <span>Sem cobranças surpresa</span>
+      </div>
+    </div>
+    <div>
+      <span class="eyebrow r">A Solução</span>
+      <h2 class="sh r d2">A Petsalut foi criada para trazer <em>previsibilidade</em></h2>
+      <p class="sp r d3">Você paga uma mensalidade fixa e sabe exatamente quanto vai investir no cuidado do seu pet. Sem surpresas. Sem decisões difíceis na hora errada.</p>
+      <a class="btn-teal" href="https://wa.me/5527998024119?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20planos%20da%20Petsalut" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.927l6.234-1.637A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.667-.523-5.176-1.432l-.371-.22-3.7.972 1.005-3.59-.242-.389A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Fale com um especialista
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDES -->
+<section id="includes" class="grain">
+  <div class="inner">
+    <span class="eyebrow dim r">O que está incluído</span>
+    <h2 class="sh r d2">Dependendo do plano,<br/>você conta com:</h2>
+    <p class="sp r d3" style="margin-bottom:52px">Tudo organizado para incentivar o cuidado preventivo — não apenas resolver problemas quando eles aparecem.</p>
+    <div class="feat-grid">
+      <div class="feat-card r d1"><div class="feat-ico">🩺</div><h3>Consultas veterinárias</h3><p>Acesso a consultas com veterinários da rede credenciada, sem custo adicional.</p></div>
+      <div class="feat-card r d2"><div class="feat-ico">🔬</div><h3>Exames laboratoriais e de imagem</h3><p>Diagnósticos completos incluídos no plano.</p></div>
+      <div class="feat-card r d3"><div class="feat-ico">💉</div><h3>Vacinas essenciais</h3><p>Proteção preventiva para manter seu pet sempre saudável.</p></div>
+      <div class="feat-card r d4"><div class="feat-ico">🚨</div><h3>Atendimento emergencial</h3><p>Suporte 24 horas para quando o imprevisto acontece.</p></div>
+      <div class="feat-card r d5"><div class="feat-ico">✂️</div><h3>Castração</h3><p>Disponível em planos específicos para quem planeja o futuro do pet.</p></div>
+      <div class="feat-card r d6"><div class="feat-ico">🛡️</div><h3>Cuidado preventivo</h3><p>Incentivo a visitas regulares antes que os problemas apareçam.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIALS -->
+<section id="diff" class="s">
+  <div class="inner">
+    <span class="eyebrow r">Diferenciais</span>
+    <h2 class="sh r d2">Por que a Petsalut é diferente<br/>de outros planos pet</h2>
+    <div class="diff-grid">
+      <div class="diff-card r d1"><div class="diff-num">01</div><div><h3>Atendimento 24h</h3><p>Imprevistos não têm hora. Você conta com suporte veterinário sempre que precisar.</p></div></div>
+      <div class="diff-card r d2"><div class="diff-num">02</div><div><h3>Cobertura no Espírito Santo</h3><p>Rede com clínicas em diversas regiões. Você sabe onde buscar atendimento com antecedência.</p></div></div>
+      <div class="diff-card r d3"><div class="diff-num">03</div><div><h3>Sem surpresas no valor</h3><p>Mensalidade fixa, sem cobranças adicionais por uso. Mais controle sobre seus gastos.</p></div></div>
+      <div class="diff-card r d4"><div class="diff-num">04</div><div><h3>Carência simplificada</h3><p>Processos claros e pensados para facilitar o acesso ao plano.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section id="proof" class="grain">
+  <div class="inner">
+    <span class="eyebrow dim r">Prova Social</span>
+    <h2 class="sh r d2">Quem já usa, confia</h2>
+    <div class="pstats">
+      <div class="pstat r d1"><strong><em>+</em><span data-count="50000" data-suffix="">50.000</span></strong><p>consultas realizadas</p></div>
+      <div class="pstat r d2"><strong><em>+</em><span data-count="9" data-suffix=" anos">9 anos</span></strong><p>de atuação no Espírito Santo</p></div>
+    </div>
+    <div class="pdiv"></div>
+    
+  </div>
+</section>
+
+<!-- PARCEIROS ESPECIAIS -->
+<section id="parceiros">
+  <div class="inner">
+    <div class="pc-head">
+      <span class="eyebrow r">Parceiros Especiais</span>
+      <h2 class="sh r d2">Muito além do plano de saúde</h2>
+      <p class="sp r d3">Uma rede de parceiros cuidadosamente selecionados para oferecer o melhor para o seu pet.</p>
+    </div>
+    <div class="pc-grid">
+
+      <div class="pc-card r d1">
+        <img class="pc-logo" src="Logos/rADWXp.png" alt="Academia Canina VIX K9"/>
+        <p class="pc-name">Academia Canina VIX — K9</p>
+        <p class="pc-desc">Especializada em comportamento canino com soluções personalizadas para o seu melhor amigo.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Adestramento</span>
+          <span class="pc-tag">Hospedagem</span>
+          <span class="pc-tag">Passeios</span>
+          <span class="pc-tag">Bike Dog</span>
+        </div>
+        
+      </div>
+
+      <div class="pc-card r d2">
+        <img class="pc-logo" src="Logos/AYaozH.png" alt="Carol Paulino Foto Pet"/>
+        <p class="pc-name">Carol Paulino — Foto Pet</p>
+        <p class="pc-desc">Especialista em registrar pets e famílias, capturando momentos mágicos e inesquecíveis.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Fotografia Pet</span>
+          <span class="pc-tag">Família</span>
+        </div>
+        
+      </div>
+
+      <div class="pc-card r d3">
+        <img class="pc-logo" src="Logos/DvEOaF.png" alt="Casa Gaia Centro de Treinamento"/>
+        <p class="pc-name">Casa Gaia — Centro de Treinamento</p>
+        <p class="pc-desc">Educação canina de maneira positiva, respeitando a individualidade de cada pet.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Treinamento</span>
+          <span class="pc-tag">Passeios</span>
+          <span class="pc-tag">Pet Sitter</span>
+        </div>
+        
+      </div>
+
+      <div class="pc-card r d4">
+        <img class="pc-logo" src="Logos/KttnXG.png" alt="Casa Gaia Pet Hotel"/>
+        <p class="pc-name">Casa Gaia — Pet Hotel &amp; Day Care</p>
+        <p class="pc-desc">Serviço diferenciado com qualidade e diversão para o seu pet se sentir em casa.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Hospedagem</span>
+          <span class="pc-tag">Day Care</span>
+          <span class="pc-tag">Banho</span>
+        </div>
+        
+      </div>
+
+      <div class="pc-card r d5">
+        <img class="pc-logo" src="Logos/l7yPnR.png" alt="Céu de Patas Crematório Pet"/>
+        <p class="pc-name">Céu de Patas — Crematório Pet</p>
+        <p class="pc-desc">Oferece plano emergencial e preventivo, cuidando do seu pet com respeito e carinho mesmo nos momentos mais difíceis.</p>
+        <div class="pc-tags">
+          <span class="pc-tag">Cremação</span>
+          <span class="pc-tag">Plano Emergencial</span>
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIALS -->
+<section id="testimonials" class="grain">
+  <div class="inner">
+    <div class="vt-head">
+      <span class="eyebrow dim r">Depoimentos em vídeo</span>
+      <h2 class="sh r d2">Quem já usa, <em>fala</em></h2>
+      <p class="sp r d3">Histórias reais de tutores que escolheram cuidar melhor do seu pet.</p>
+    </div>
+
+    <div class="vt-stage r d3">
+      <button class="vt-arrow" id="vtPrev" aria-label="Anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+
+      <div class="vt-overflow" id="vtOverflow">
+        <div class="vt-track" id="vtTrack">
+
+          <div class="vt-card" data-idx="0">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/YktVZk.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/YktVZk.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="1">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/XGPM3Y.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/XGPM3Y.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="2">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/N4B4FI.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/N4B4FI.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="3">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/nygx2B.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/nygx2B.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="4">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/Jbrj5f.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/Jbrj5f.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="5">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/cjo53a.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/cjo53a.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="6">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/Y2peQb.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/Y2peQb.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+          <div class="vt-card" data-idx="7">
+            <video src="https://n8nn-zipline.ivljly.easypanel.host/u/tgHUa0.mp4"
+              poster="https://n8nn-zipline.ivljly.easypanel.host/u/tgHUa0.jpg"
+              muted playsinline preload="metadata" loop></video>
+            <div class="vt-overlay">
+              <div class="vt-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="vt-expand-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> Toque para expandir</div>
+            </div>
+          </div>
+
+        </div><!-- /vt-track -->
+      </div><!-- /vt-overflow -->
+
+      <button class="vt-arrow" id="vtNext" aria-label="Próximo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div><!-- /vt-stage -->
+
+    <div class="vt-dots r d4" id="vtDots"></div>
+    <div class="vt-swipe-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      deslize
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="s">
+  <div class="inner">
+    <span class="eyebrow r">Dúvidas frequentes</span>
+    <h2 class="sh r d2">Respondendo suas<br/>principais dúvidas</h2>
+    <div class="faq-list r d3">
+      <div class="faq-item">
+        <button class="faq-btn">E se eu não usar o plano?<span class="ico">+</span></button>
+        <div class="faq-body"><p>O plano também cobre cuidados que fazem parte da rotina, como consultas e vacinas. Você usa — e cuida melhor do seu pet.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">E se não funcionar quando eu precisar?<span class="ico">+</span></button>
+        <div class="faq-body"><p>A proposta é simples: acesso claro, rede definida e uso sem cobranças adicionais. Você sabe com antecedência onde e como será atendido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">É caro?<span class="ico">+</span></button>
+        <div class="faq-body"><p>Sem o plano, um único atendimento de urgência pode custar mais do que vários meses de mensalidade. O plano é investimento, não despesa.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-btn">É complicado usar?<span class="ico">+</span></button>
+        <div class="faq-body"><p>A contratação e o suporte acontecem de forma simples, direto pelo WhatsApp. Sem burocracia, sem papelada.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta">
+  <div class="inner">
+    <h2 class="r">Proteja seu pet hoje.<br/>Sem complicação.</h2>
+    <p class="r d2">Em poucos minutos, você pode entender qual plano faz mais sentido para o seu pet. Sem compromisso. Sem burocracia.</p>
+    <a class="btn-white r d3" href="https://wa.me/5527998024119?text=Ol%C3%A1!%20Quero%20proteger%20meu%20pet%20agora" target="_blank">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.057 23.927l6.234-1.637A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.898 0-3.667-.523-5.176-1.432l-.371-.22-3.7.972 1.005-3.59-.242-.389A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Quero proteger meu pet agora
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/logo.png" alt="Petsalut"/>
+        <p>Plano de saúde para pets com cobertura em todo o Espírito Santo. Desde 2017.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:petsalut@petsalut.com">petsalut@petsalut.com</a></li>
+          <li><a href="tel:08000060123">0800 006 0123</a></li>
+          <li><a href="https://wa.me/5527998024119" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Petsalut. Todos os direitos reservados.</p>
+      <p>Atendimento em todo o Espírito Santo</p>
+    </div>
+  </div>
+</footer>
+
+<!-- VIDEO MODAL -->
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Depoimento em vídeo">
+  <div class="vmodal-inner" id="vmodalInner">
+    <video id="vmodalVideo" playsinline preload="none" loop></video>
+    <button class="vmodal-close" id="vmodalClose" aria-label="Fechar">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+    </button>
+    <button class="vmodal-mute" id="vmodalMute" aria-label="Silenciar">
+      <!-- icon updated by JS -->
+    </button>
+  </div>
+</div>
+
+<script>
+// ── Nav scroll shrink
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('up',scrollY>40),{passive:true});
+
+// ── Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')});
+},{threshold:.1});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+// ── FAQ accordion
+document.querySelectorAll('.faq-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.parentElement;
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open)item.classList.add('open');
+  });
+});
+
+// ── Counter animation
+function animateCount(el,target,duration,suffix){
+  const start=performance.now();
+  const update=now=>{
+    const p=Math.min((now-start)/duration,1);
+    const ease=1-Math.pow(1-p,3); // ease-out cubic
+    el.textContent=Math.round(ease*target).toLocaleString('pt-BR')+suffix;
+    if(p<1)requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+}
+
+const counters=document.querySelectorAll('[data-count]');
+const countObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const el=e.target;
+      const target=+el.dataset.count;
+      const suffix=el.dataset.suffix||'';
+      animateCount(el,target,1800,suffix);
+      countObs.unobserve(el);
+    }
+  });
+},{threshold:.5});
+counters.forEach(el=>countObs.observe(el));
+
+// ── Video Testimonial Carousel
+(function(){
+  const FEATURED = 2; // N4B4FI — destaque
+  const GAP = 16;
+  let vtIdx = FEATURED;
+  let isDragging = false, dragStartX = 0, dragDelta = 0;
+
+  const track    = document.getElementById('vtTrack');
+  const overflow = document.getElementById('vtOverflow');
+  const dotsEl   = document.getElementById('vtDots');
+  const cards    = Array.from(document.querySelectorAll('.vt-card'));
+  const total    = cards.length;
+
+  /* ── card width: offsetWidth ignora o scale() do CSS transform */
+  function cardW(){ return cards[0] ? cards[0].offsetWidth : 220; }
+
+  /* ── build dots */
+  cards.forEach((_,i)=>{
+    const d=document.createElement('button');
+    d.className='vt-dot'; d.setAttribute('aria-label','Ir para depoimento '+(i+1));
+    d.addEventListener('click',()=>vtGoto(i));
+    dotsEl.appendChild(d);
+  });
+
+  /* ── position track so card[idx] is centered in overflow */
+  function vtPosition(idx, instant){
+    const cw      = cardW();
+    const ow      = overflow.clientWidth;
+    const trackW  = total * cw + (total - 1) * GAP;
+    const ideal   = idx * (cw + GAP) - (ow - cw) / 2;
+    const maxOff  = Math.max(0, trackW - ow);
+    const offset  = Math.max(0, Math.min(ideal, maxOff));
+    track.style.transition = instant ? 'none' : 'transform .52s cubic-bezier(.4,0,.2,1)';
+    track.style.transform  = `translateX(${-offset}px)`;
+  }
+
+  /* ── activate card: play/pause videos, update classes & dots */
+  function vtGoto(idx, instant){
+    idx = Math.max(0, Math.min(idx, total-1));
+    vtIdx = idx;
+
+    cards.forEach((c,i)=>{
+      const vid = c.querySelector('video');
+      const isActive = i===idx;
+      c.classList.toggle('active', isActive);
+      if(isActive){
+        vid.play().catch(()=>{});
+      } else {
+        vid.pause();
+        vid.currentTime = 0;
+      }
+    });
+
+    vtPosition(idx, instant);
+
+    document.querySelectorAll('.vt-dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+
+    // arrow state
+    document.getElementById('vtPrev').style.opacity = idx===0 ? '.3' : '1';
+    document.getElementById('vtNext').style.opacity = idx===total-1 ? '.3' : '1';
+  }
+
+  /* ── modal open/close ── */
+  const modal      = document.getElementById('vmodal');
+  const modalVideo = document.getElementById('vmodalVideo');
+  const modalMute  = document.getElementById('vmodalMute');
+  let modalMuted   = false;
+
+  const iconSound = `<svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/></svg>`;
+  const iconMuted = `<svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/><line x1="17" y1="9" x2="23" y2="15" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>`;
+
+  function openModal(src, poster, startTime){
+    modalVideo.src    = src;
+    modalVideo.poster = poster;
+    modalVideo.muted  = false;
+    modalMuted        = false;
+    modalMute.innerHTML = iconSound;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    modalVideo.currentTime = startTime || 0;
+    modalVideo.play().catch(()=>{
+      // autoplay with sound blocked — fallback to muted then prompt
+      modalVideo.muted = true;
+      modalMuted = true;
+      modalMute.innerHTML = iconMuted;
+      modalVideo.play();
+    });
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(()=>{
+      modalVideo.pause();
+      modalVideo.src = '';
+    }, 380);
+  }
+
+  document.getElementById('vmodalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', e=>{ if(e.target===modal) closeModal(); });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+  modalMute.addEventListener('click', ()=>{
+    modalMuted = !modalMuted;
+    modalVideo.muted = modalMuted;
+    modalMute.innerHTML = modalMuted ? iconMuted : iconSound;
+  });
+
+  /* ── click on card → navigate if inactive; open modal if already active */
+  cards.forEach((c,i)=>{
+    c.addEventListener('click',()=>{
+      if(isDragging) return;
+      if(i === vtIdx){
+        // already center → open modal with audio + zoom
+        const vid    = c.querySelector('video');
+        const src    = c.querySelector('video').src || c.querySelector('video').getAttribute('src');
+        const poster = c.querySelector('video').poster;
+        openModal(src, poster, vid.currentTime);
+      } else {
+        vtGoto(i);
+      }
+    });
+  });
+
+  /* ── arrow buttons */
+  document.getElementById('vtPrev').addEventListener('click',()=>vtGoto(vtIdx-1));
+  document.getElementById('vtNext').addEventListener('click',()=>vtGoto(vtIdx+1));
+
+  /* ── keyboard */
+  document.addEventListener('keydown',e=>{
+    if(!document.getElementById('testimonials').matches(':hover')) return;
+    if(e.key==='ArrowLeft') vtGoto(vtIdx-1);
+    if(e.key==='ArrowRight') vtGoto(vtIdx+1);
+  });
+
+  /* ── touch/mouse drag */
+  function onDragStart(x){ isDragging=false; dragStartX=x; dragDelta=0; }
+  function onDragMove(x){ dragDelta=x-dragStartX; }
+  function onDragEnd(){
+    if(Math.abs(dragDelta)>40){
+      isDragging=true;
+      vtGoto(dragDelta<0 ? vtIdx+1 : vtIdx-1);
+    }
+    setTimeout(()=>{ isDragging=false; },50);
+  }
+
+  overflow.addEventListener('mousedown', e=>onDragStart(e.clientX));
+  overflow.addEventListener('mousemove', e=>{ if(e.buttons===1) onDragMove(e.clientX); });
+  overflow.addEventListener('mouseup',   ()=>onDragEnd());
+  overflow.addEventListener('touchstart',e=>onDragStart(e.touches[0].clientX),{passive:true});
+  overflow.addEventListener('touchmove', e=>onDragMove(e.touches[0].clientX),{passive:true});
+  overflow.addEventListener('touchend',  ()=>onDragEnd());
+
+  /* ── reposition on resize (debounced) */
+  let resizeTimer;
+  window.addEventListener('resize', ()=>{
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(()=>vtPosition(vtIdx, true), 80);
+  });
+
+  /* ── init: start on featured card when section enters viewport */
+  const initObs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        vtGoto(FEATURED, true);
+        initObs.disconnect();
+      }
+    });
+  },{threshold:.2});
+  initObs.observe(document.getElementById('testimonials'));
+
+  /* ── initial position: duplo RAF garante que o browser já calculou offsetWidth */
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    cards[FEATURED].classList.add('active');
+    document.querySelectorAll('.vt-dot')[FEATURED].classList.add('active');
+    document.getElementById('vtPrev').style.opacity = FEATURED===0 ? '.3':'1';
+    document.getElementById('vtNext').style.opacity = FEATURED===total-1 ? '.3':'1';
+    vtPosition(FEATURED, true);
+  }));
+})();
+
+// ── Active nav link highlight on scroll
+const sections=document.querySelectorAll('section[id]');
+const navLinks=document.querySelectorAll('.nav-menu a[href^="#"]');
+const activeObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id=e.target.id;
+      navLinks.forEach(a=>{
+        a.style.color=a.getAttribute('href')==='#'+id?'var(--teal)':'';
+      });
+    }
+  });
+},{rootMargin:'-40% 0px -50% 0px'});
+sections.forEach(s=>activeObs.observe(s));
+</script>
+</body>
+</html>
